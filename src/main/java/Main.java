@@ -13,6 +13,6 @@ public class Main {
     options.setBinary("/home/usuario/Descargas/firefox-118.0.2/firefox/firefox");
   
     WebDriver driver = new FirefoxDriver(options);
-    driver.get("https://www3.animeflv.net/browse?page=1");
+    driver.get("https://myanimelist.net/anime/genre/69/Otaku_Culture");
   }
 }
