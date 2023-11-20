@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.List;
 
 public class Serie {
     private String titulo;
@@ -7,12 +8,16 @@ public class Serie {
     private int episodios;
     private String estado;
     private Date fechaEstreno;
-    private String[] productoras;
+    private List<Estudio> productoras;
     private String licencia;
-    private String estudio;
+    private Estudio estudio;
     private String src;
-    private String[] generos;
-    private String[] temas;
+    private List<Genero> generos;
+    private List<Genero> temas;
     private float duracion;
     private String descripcion;
+
+
+
+
 }
