@@ -49,17 +49,8 @@ public class Serie {
     public String toString() {
         return "Serie{" +
                 "id=" + id +
-                ", titulo='" + titulo + '\'' +
-                ", imagen='" + imagen + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", episodios=" + episodios +
-                ", estado='" + estado + '\'' +
-                ", fechaEstreno=" + fechaEstreno +
-                ", licencia='" + licencia + '\'' +
                 ", estudios=" + estudios +
-                ", src='" + src + '\'' +
-                ", duracion=" + duracion +
-                ", descripcion='" + descripcion + '\'' +
+                ", generos=" + generos +
                 '}';
     }
 }

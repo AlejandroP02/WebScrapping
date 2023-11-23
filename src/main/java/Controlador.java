@@ -16,6 +16,7 @@ public class Controlador {
     private List<String> linksGeneros = new ArrayList<>();
     private List<Serie> series = new ArrayList<>();
     private List<Estudio> estudios = new ArrayList<>();
+    private List<Genero> generos = new ArrayList<>();
     private final Map<String, String> map_mes = new HashMap<>();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
 
@@ -57,7 +58,7 @@ public class Controlador {
         WebDriver driver = new FirefoxDriver(options);
         driver.get("https://myanimelist.net/anime/genre/69/Otaku_Culture");
         guardarLinksSeries(driver);
-        guardiaSeries(driver);
+        guardarSeries(driver);
         driver.quit();
     }
 
@@ -72,7 +73,7 @@ public class Controlador {
         }
     }
 
-    public void guardiaSeries(WebDriver driver){
+    public void guardarSeries(WebDriver driver){
         for (String a:linksSeries) {
             driver.get(a);
             sleep(7000);
@@ -86,6 +87,7 @@ public class Controlador {
             String estado="";
             String fecha="";
             List<String> estudiosL = new ArrayList<>();
+            List<String> generoL = new ArrayList<>();
             LocalDate fechaEstreno = null;
             String licencia="";
             String src="";
@@ -110,13 +112,17 @@ public class Controlador {
                         fechaEstreno = LocalDate.parse(fecha, formatter);
                     }
                 }else if(e.getText().contains("Producers") || e.getText().contains("Studios")){
-                    estudiosL.addAll(guardarLinksEstudios(e));
+                    if(!e.getText().contains("add some")){
+                        estudiosL.addAll(guardarLinksEstudios(e));
+                    }
                 }else if(e.getText().contains("Licensors")){
                     licencia = e.getText().split(": ")[1].replaceAll(", add some", "");
                 }else if(e.getText().contains("Source")){
                     src = e.getText().split(": ")[1];
                 }else if(e.getText().contains("Genre") || e.getText().contains("Themes") || e.getText().contains("Demographic")){
-                    guardarLinksGeneros(e);
+                    if(!e.getText().contains("add some")){
+                        generoL.addAll(guardarLinksGeneros(e));
+                    }
                 }else if(e.getText().contains("Duration")){
                     if(e.getText().split(": ")[1].contains("Unknown")){
                         duracion=0;
@@ -127,6 +133,7 @@ public class Controlador {
             }
             Serie serie1 = new Serie(titulo, imagen, tipo, episodios, estado, fechaEstreno, licencia, src, duracion, descripcion);
             serie1.setEstudios(guardarEstudio(driver, serie1, estudiosL));
+            serie1.setGeneros(guardarGeneros(driver, serie1, generoL));
             System.out.println(serie1.toString());
 
         }
@@ -141,11 +148,14 @@ public class Controlador {
         }
         return links;
     }
-    public void guardarLinksGeneros(WebElement genero){
+    public List<String> guardarLinksGeneros(WebElement genero){
         List<WebElement> box = genero.findElements(By.tagName("a"));
+        List<String> links = new ArrayList<>();
         for (WebElement a:box) {
             linksGeneros.add(a.getAttribute("href"));
+            links.add(a.getAttribute("href"));
         }
+        return links;
     }
 
     public List<Estudio> guardarEstudio(WebDriver driver, Serie serie, List<String> links){
@@ -189,6 +199,43 @@ public class Controlador {
 
         }
         return estudios;
+    }
+
+
+    public List<Genero> guardarGeneros(WebDriver driver, Serie serie, List<String> links){
+        List<Genero> genero = new ArrayList<>();
+        for (String a:links) {
+            if(Collections.frequency(linksGeneros, a)<=1){
+                driver.get(a);
+                sleep(7000);
+                String titulo = driver.findElement(By.className("h1")).getText();
+                List<WebElement> num = driver.findElements(By.className("fw-n"));
+                int series = 0;
+                for (WebElement s:num) {
+                    if(s.getText().contains("(") && s.getText().contains(")")){
+                        series = Integer.parseInt(s.getText().replaceAll("\\(","").replaceAll("\\)","").replaceAll(",",""));
+                    }
+                }
+                String descripcion="";
+                List<WebElement> ps = driver.findElements(By.tagName("p"));
+                for (WebElement p:ps) {
+                    if(p.getAttribute("class").contains("genre-description")){
+                        descripcion = driver.findElement(By.className("genre-description")).getText().replaceAll("\n\n","\n");
+                    }
+
+                }
+                genero.add(new Genero(serie.getId(), titulo, a, descripcion, series));
+                this.generos.add(new Genero(titulo, a, descripcion, series));
+            }else{
+                for (Genero b:this.generos) {
+                    if(b.getLink().equals(a)){
+                        genero.add(new Genero(serie.getId(), b.getNombre(), a, b.getDescripcion(), b.getSeries()));
+                    }
+                }
+            }
+
+        }
+        return genero;
     }
 
 }
