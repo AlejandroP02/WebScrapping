@@ -56,6 +56,7 @@ public class Serie {
                 ", estado='" + estado + '\'' +
                 ", fechaEstreno=" + fechaEstreno +
                 ", licencia='" + licencia + '\'' +
+                ", estudios=" + estudios +
                 ", src='" + src + '\'' +
                 ", duracion=" + duracion +
                 ", descripcion='" + descripcion + '\'' +

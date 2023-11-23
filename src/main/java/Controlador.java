@@ -6,19 +6,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.time.LocalDate;
+import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Controlador {
     private  List<String> linksSeries = new ArrayList<>();
     private List<String> linksEstudios = new ArrayList<>();
     private List<String> linksGeneros = new ArrayList<>();
-    private List<String> series = new ArrayList<>();
-    private Map<String, String> map_mes = new HashMap<>();
-    private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
+    private List<Serie> series = new ArrayList<>();
+    private List<Estudio> estudios = new ArrayList<>();
+    private final Map<String, String> map_mes = new HashMap<>();
+    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
 
     public Controlador() {
         map_mes();
@@ -86,6 +85,7 @@ public class Controlador {
             int episodios=0;
             String estado="";
             String fecha="";
+            List<String> estudiosL = new ArrayList<>();
             LocalDate fechaEstreno = null;
             String licencia="";
             String src="";
@@ -110,7 +110,7 @@ public class Controlador {
                         fechaEstreno = LocalDate.parse(fecha, formatter);
                     }
                 }else if(e.getText().contains("Producers") || e.getText().contains("Studios")){
-                    guardarLinksEstudios(e);
+                    estudiosL.addAll(guardarLinksEstudios(e));
                 }else if(e.getText().contains("Licensors")){
                     licencia = e.getText().split(": ")[1].replaceAll(", add some", "");
                 }else if(e.getText().contains("Source")){
@@ -126,21 +126,69 @@ public class Controlador {
                 }
             }
             Serie serie1 = new Serie(titulo, imagen, tipo, episodios, estado, fechaEstreno, licencia, src, duracion, descripcion);
+            serie1.setEstudios(guardarEstudio(driver, serie1, estudiosL));
             System.out.println(serie1.toString());
+
         }
     }
 
-    public void guardarLinksEstudios(WebElement estudio){
+    public List<String> guardarLinksEstudios(WebElement estudio){
         List<WebElement> box = estudio.findElements(By.tagName("a"));
+        List<String> links = new ArrayList<>();
         for (WebElement a:box) {
             linksEstudios.add(a.getAttribute("href"));
+            links.add(a.getAttribute("href"));
         }
+        return links;
     }
     public void guardarLinksGeneros(WebElement genero){
         List<WebElement> box = genero.findElements(By.tagName("a"));
         for (WebElement a:box) {
             linksGeneros.add(a.getAttribute("href"));
         }
+    }
+
+    public List<Estudio> guardarEstudio(WebDriver driver, Serie serie, List<String> links){
+        String fecha="";
+        List<Estudio> estudios = new ArrayList<>();
+        for (String a:links) {
+            if(Collections.frequency(linksEstudios, a)<=1){
+                driver.get(a);
+                sleep(7000);
+                String titulo = driver.findElement(By.className("h1-title")).getText();
+                LocalDate fechaCreacion=null;
+                WebElement cuadroHorizontal = driver.findElement(By.className("navi-seasonal"));
+                int series = Integer.parseInt(cuadroHorizontal.findElement(By.className("on")).getText().replaceAll("All \\(", "").replace(")", ""));
+                List<WebElement> contentLeft = driver.findElements(By.className("spaceit_pad"));
+                for (WebElement b:contentLeft) {
+                    if(b.getText().contains("Established")){
+                        if(b.getText().split(": ")[1].split(" ").length==2){
+                            fecha= b.getText().split(": ")[1].replaceAll(",", "");
+                            fecha = "01/"+map_mes.get(fecha.split(" ")[0])+"/"+fecha.split(" ")[1];
+                            fechaCreacion= LocalDate.parse(fecha, formatter);
+                        }else if(b.getText().split(": ")[1].split(" ").length==1){
+                            fecha= b.getText().split(": ")[1].replaceAll(",", "");
+                            fecha = "01/01/"+fecha.split(" ")[0];
+                            fechaCreacion= LocalDate.parse(fecha, formatter);
+                        }else{
+                            fecha= b.getText().split(": ")[1].replaceAll(",", "");
+                            fecha = fecha.split(" ")[1]+"/"+map_mes.get(fecha.split(" ")[0])+"/"+fecha.split(" ")[2];
+                            fechaCreacion = LocalDate.parse(fecha, formatter);
+                        }
+                    }
+                }
+                estudios.add(new Estudio(serie.getId(), titulo, a, fechaCreacion, series));
+                this.estudios.add(new Estudio(titulo, a, fechaCreacion, series));
+            }else{
+                for (Estudio b:this.estudios) {
+                    if(b.getLink().equals(a)){
+                        estudios.add(new Estudio(serie.getId(), b.getNombre(), a, b.getFechaCreacion(), b.getSeries()));
+                    }
+                }
+            }
+
+        }
+        return estudios;
     }
 
 }
