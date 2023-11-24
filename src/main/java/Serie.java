@@ -45,12 +45,51 @@ public class Serie {
         this.generos = generos;
     }
 
-    @Override
-    public String toString() {
-        return "Serie{" +
-                "id=" + id +
-                ", estudios=" + estudios +
-                ", generos=" + generos +
-                '}';
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public int getEpisodios() {
+        return episodios;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public LocalDate getFechaEstreno() {
+        return fechaEstreno;
+    }
+
+    public String getLicencia() {
+        return licencia;
+    }
+
+    public List<Estudio> getEstudios() {
+        return estudios;
+    }
+
+    public String getSrc() {
+        return src;
+    }
+
+    public List<Genero> getGeneros() {
+        return generos;
+    }
+
+    public float getDuracion() {
+        return duracion;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
     }
 }

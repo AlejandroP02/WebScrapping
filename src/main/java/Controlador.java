@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import com.opencsv.CSVWriter;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
@@ -78,7 +81,7 @@ public class Controlador {
             driver.get(a);
             sleep(7000);
             WebElement serie = driver.findElement(By.className("h1_bold_none"));
-            String descripcion = driver.findElement(By.className("rightside")).findElement(By.tagName("p")).getText().replaceAll("\n\n","\n");;
+            String descripcion = driver.findElement(By.className("rightside")).findElement(By.tagName("p")).getText().replaceAll("\n"," ");;
             String titulo = serie.findElement(By.tagName("strong")).getText();
             String imagen = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/div[2]/table/tbody/tr/td[1]/div/div[1]/a/img")).getAttribute("src");
             List<WebElement> series = driver.findElements(By.className("spaceit_pad"));
@@ -134,7 +137,7 @@ public class Controlador {
             Serie serie1 = new Serie(titulo, imagen, tipo, episodios, estado, fechaEstreno, licencia, src, duracion, descripcion);
             serie1.setEstudios(guardarEstudio(driver, serie1, estudiosL));
             serie1.setGeneros(guardarGeneros(driver, serie1, generoL));
-            System.out.println(serie1.toString());
+            this.series.add(serie1);
 
         }
     }
@@ -220,7 +223,7 @@ public class Controlador {
                 List<WebElement> ps = driver.findElements(By.tagName("p"));
                 for (WebElement p:ps) {
                     if(p.getAttribute("class").contains("genre-description")){
-                        descripcion = driver.findElement(By.className("genre-description")).getText().replaceAll("\n\n","\n");
+                        descripcion = driver.findElement(By.className("genre-description")).getText().replaceAll("\n"," ");
                     }
 
                 }
@@ -237,5 +240,46 @@ public class Controlador {
         }
         return genero;
     }
+
+    public void guardarCSV(){
+        // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
+        String csvSeries="src/main/series.csv";
+        String csvEstudios="src/main/estudios.csv";
+        String csvGeneros="src/main/generos.csv";
+
+        try {
+            CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries));
+            CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios));
+            CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros));
+            String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "SRC", "DURACION", "DESCRIPCION"};
+            writer1.writeNext(data1, true );
+            data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "FECHA_CREACION", "SERIES"};
+            writer2.writeNext(data1, true );
+            data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "DESCRIPCION", "SERIES"};
+            writer3.writeNext(data1, true );
+
+            // Escribe las líneas de datos al archivo CSV
+            for (Serie serie : series) {
+                String[] data = {String.valueOf(serie.getId()), serie.getTitulo(), serie.getImagen(), serie.getTipo(), String.valueOf(serie.getEpisodios()), serie.getEstado(), String.valueOf(serie.getFechaEstreno()), serie.getSrc(), String.valueOf(serie.getDuracion()), serie.getDescripcion()};
+                writer1.writeNext(data, true );
+                for (Estudio estudio:serie.getEstudios()) {
+                    data = new String[]{String.valueOf(serie.getId()), estudio.getNombre(), estudio.getLink(), String.valueOf(estudio.getFechaCreacion()), String.valueOf(estudio.getSeries())};
+                    writer2.writeNext(data, true );
+                }
+                for (Genero genero:serie.getGeneros()) {
+                    data = new String[]{String.valueOf(serie.getId()), genero.getNombre(), genero.getLink(), genero.getDescripcion(), String.valueOf(genero.getSeries())};
+                    writer3.writeNext(data, true );
+                }
+            }
+
+            System.out.println("Datos guardados correctamente en el archivo CSV.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
 
 }

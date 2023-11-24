@@ -37,10 +37,4 @@ public class Estudio {
         return series;
     }
 
-    @Override
-    public String toString() {
-        return "Estudio{" +
-                "nombre='" + nombre + '\'' +
-                '}';
-    }
 }
