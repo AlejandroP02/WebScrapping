@@ -138,7 +138,7 @@ public class Controlador {
             serie1.setEstudios(guardarEstudio(driver, serie1, estudiosL));
             serie1.setGeneros(guardarGeneros(driver, serie1, generoL));
             this.series.add(serie1);
-
+            System.out.println(this.series.size());
         }
     }
 
@@ -243,34 +243,59 @@ public class Controlador {
 
     public void guardarCSV(){
         // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
+        char nuevoSeparador = ';';
         String csvSeries="src/main/series.csv";
         String csvEstudios="src/main/estudios.csv";
         String csvGeneros="src/main/generos.csv";
 
         try {
-            CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries));
-            CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios));
-            CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros));
-            String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "SRC", "DURACION", "DESCRIPCION"};
-            writer1.writeNext(data1, true );
+            CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries), nuevoSeparador,
+                    CSVWriter.NO_QUOTE_CHARACTER,
+                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_LINE_END);
+            CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios), nuevoSeparador,
+                    CSVWriter.NO_QUOTE_CHARACTER,
+                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_LINE_END);
+            CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros), nuevoSeparador,
+                    CSVWriter.NO_QUOTE_CHARACTER,
+                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_LINE_END);
+            String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "SRC", "DURACION"};
+            writer1.writeNext(data1);
             data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "FECHA_CREACION", "SERIES"};
-            writer2.writeNext(data1, true );
+            writer2.writeNext(data1);
             data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "DESCRIPCION", "SERIES"};
-            writer3.writeNext(data1, true );
-
+            writer3.writeNext(data1);
             // Escribe las líneas de datos al archivo CSV
-            for (Serie serie : series) {
-                String[] data = {String.valueOf(serie.getId()), serie.getTitulo(), serie.getImagen(), serie.getTipo(), String.valueOf(serie.getEpisodios()), serie.getEstado(), String.valueOf(serie.getFechaEstreno()), serie.getSrc(), String.valueOf(serie.getDuracion()), serie.getDescripcion()};
-                writer1.writeNext(data, true );
+            for (Serie serie : this.series) {
+                String[] data = {
+                        String.valueOf(serie.getId()),
+                        serie.getTitulo(),
+                        serie.getImagen(),
+                        serie.getTipo(),
+                        String.valueOf(serie.getEpisodios()),
+                        serie.getEstado(),
+                        String.valueOf(serie.getFechaEstreno()),
+                        serie.getSrc(),
+                        String.valueOf(serie.getDuracion()),
+                        serie.getDescripcion()
+                };
+                //System.out.println(Arrays.toString(data));
+                writer1.writeNext(data);
                 for (Estudio estudio:serie.getEstudios()) {
                     data = new String[]{String.valueOf(serie.getId()), estudio.getNombre(), estudio.getLink(), String.valueOf(estudio.getFechaCreacion()), String.valueOf(estudio.getSeries())};
-                    writer2.writeNext(data, true );
+                    writer2.writeNext(data);
                 }
                 for (Genero genero:serie.getGeneros()) {
                     data = new String[]{String.valueOf(serie.getId()), genero.getNombre(), genero.getLink(), genero.getDescripcion(), String.valueOf(genero.getSeries())};
-                    writer3.writeNext(data, true );
+                    writer3.writeNext(data);
                 }
             }
+            writer3.close();
+            writer2.close();
+            writer1.close();
+
 
             System.out.println("Datos guardados correctamente en el archivo CSV.");
         } catch (IOException e) {
