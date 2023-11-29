@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,25 +20,68 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.chrono.ChronoLocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+/**
+ * Contiene todos los metodos funcionales
+ * del programa
+ */
 public class Controlador {
+    /**
+     * Contiene los enlaces de todas las series de la web.
+     */
     private  List<String> linksSeries = new ArrayList<>();
+    /**
+     * Contiene los enlaces de todos los estudios para evitar
+     * entrar a paginas en las que ya ha entrado.
+     */
     private List<String> linksEstudios = new ArrayList<>();
+    /**
+     * Contiene los enlaces de todos los generos para evitar
+     * entrar a paginas en las que ya ha entrado.
+     */
     private List<String> linksGeneros = new ArrayList<>();
+    /**
+     * Contiene todos los elementos Serie con toda su informacion.
+     */
     private List<Serie> series = new ArrayList<>();
+    /**
+     * Contiene todos los elementos Estudio sin identificador
+     * para tener la informacion de cada uno guardada y evitar
+     * entrar a paginas en las que ya ha entrado.
+     */
     private List<Estudio> estudios = new ArrayList<>();
+    /**
+     * Contiene todos los elementos Genero sin identificador
+     * para tener la informacion de cada uno guardada y evitar
+     * entrar a paginas en las que ya ha entrado.
+     */
     private List<Genero> generos = new ArrayList<>();
+    /**
+     * Un identificado numerico para mes.
+     */
     private final Map<String, String> map_mes = new HashMap<>();
+    /**
+     * Formato dia/mes/año para LocalDate.
+     */
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
+    /**
+     * Sirve para contener la estructura del XML.
+     */
     Document document;
 
+    /**
+     * El constructor del controlador en el que se llama al
+     * al metodo map_mes.
+     */
     public Controlador() {
         map_mes();
     }
 
+    /**
+     * Asigna un numero a cada mes.
+     */
     public void map_mes(){
         map_mes.put("Jan", "01");
         map_mes.put("Feb", "02");
@@ -55,14 +97,24 @@ public class Controlador {
         map_mes.put("Dec", "12");
     }
 
-    public void sleep(int a){
+    /**
+     * Pone al programa en espera para dejar que los elementos de la Web carguen.
+     * Se creo para ahorra tiempo al escribir.
+     * @param milesegundos Son los milisegundos que el programa esperara.
+     */
+    public void sleep(int milesegundos){
         try {
-            Thread.sleep(a);
+            Thread.sleep(milesegundos);
         }catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * Incia el Gecko en la pagina especificada
+     * y llama a los metodos necesarios para realizar
+     * la tarea.
+     */
     public void iniciarGecko(){
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
@@ -78,6 +130,12 @@ public class Controlador {
         driver.quit();
     }
 
+    /**
+     * Guarda el enlace a cada serie de la pagina.
+     * @param driver Es el elemento que permite entrar y navegar por la web,
+     *               es necesario para que el metodo vea los elementos
+     *               que contiene el enlaces.
+     */
     public void guardarLinksSeries(WebDriver driver){
         sleep(5000);
         WebElement cookies = driver.findElement(By.className("css-47sehv"));
@@ -89,6 +147,14 @@ public class Controlador {
         }
     }
 
+    /**
+     * Va guardando las series una por una
+     * y llama a los metodos necesarios
+     * para guardar otros datos.
+     * @param driver Es el elemento que permite entrar y navegar por la web,
+     *               es necesario para que el metodo vea los elementos
+     *               que contienen los enlaces.
+     */
     public void guardarSeries(WebDriver driver){
         for (String a:linksSeries) {
             driver.get(a);
@@ -155,6 +221,14 @@ public class Controlador {
         }
     }
 
+    /**
+     * Guarda el enlace de los estudios que pertenecen a la serie y al mismo tiempo
+     * guarda todos los enlaces en una array para evitar vover a entrar en paginas
+     * en las que ya haya entrado.
+     * @param estudio Contiene los elementos donde se encuentra
+     *                los enlaces de los estudios.
+     * @return Devuelve la lista de enlaces de los estudios de la serie en especifica.
+     */
     public List<String> guardarLinksEstudios(WebElement estudio){
         List<WebElement> box = estudio.findElements(By.tagName("a"));
         List<String> links = new ArrayList<>();
@@ -164,6 +238,15 @@ public class Controlador {
         }
         return links;
     }
+
+    /**
+     * Guarda el enlace de los generos que pertenecen a la serie y al mismo tiempo
+     * guarda todos los enlaces en una array para evitar vover a entrar en paginas
+     * en las que ya haya entrado.
+     * @param genero Contiene los elementos donde se encuentra
+     *               los enlaces de los generos.
+     * @return Devuelve la lista de enlaces de los estudios de la serie en especifica.
+     */
     public List<String> guardarLinksGeneros(WebElement genero){
         List<WebElement> box = genero.findElements(By.tagName("a"));
         List<String> links = new ArrayList<>();
@@ -174,6 +257,20 @@ public class Controlador {
         return links;
     }
 
+    /**
+     * Guarda toda la informacion de los estudios antes comprobando si el estudio
+     * ya se a guardado con anterioridad para evitar volver a entrar en la pagina
+     * del estudio y recoge los datos de una lista que contiene todos los estudios,
+     * si el estudio no ha aparecido antes entonces si entra en su pagina guarda
+     * su informacion y lo guarda en dos lista, la que contiene todos los estudios
+     * y la que retorna.
+     * @param driver Sirve para que vaya navegando entre los distintos estudios.
+     * @param serie Se utiliza para poder relacionar cada estudio con su serie.
+     * @param links La lista que contine todos los enlaces de los estudios de los
+     *              cuales tiene que guardar informacion.
+     * @return Devuelve una lista que contiene todos los estudios con su informacion
+     * correspondiente.
+     */
     public List<Estudio> guardarEstudio(WebDriver driver, Serie serie, List<String> links){
         String fecha="";
         List<Estudio> estudios = new ArrayList<>();
@@ -217,7 +314,20 @@ public class Controlador {
         return estudios;
     }
 
-
+    /**
+     * Guarda toda la informacion de los generos antes comprobando si el genero
+     * ya se a guardado con anterioridad para evitar volver a entrar en la pagina
+     * del genero y recoge los datos de una lista que contiene todos los generos,
+     * si el genero no ha aparecido antes entonces si entra en su pagina guarda
+     * su informacion y lo guarda en dos lista, la que contiene todos los generos
+     * y la que retorna.
+     * @param driver Sirve para que vaya navegando entre los distintos generos.
+     * @param serie Se utiliza para poder relacionar cada genero con su serie.
+     * @param links La lista que contine todos los enlaces de los generos de los
+     *              cuales tiene que guardar informacion.
+     * @return Devuelve una lista que contiene todos los generos con su informacion
+     * correspondiente.
+     */
     public List<Genero> guardarGeneros(WebDriver driver, Serie serie, List<String> links){
         List<Genero> genero = new ArrayList<>();
         for (String a:links) {
@@ -254,6 +364,12 @@ public class Controlador {
         return genero;
     }
 
+    /**
+     * Genero un CSV para cada clase que se almacena
+     * ordenados en base al identificador que tienen
+     * todas las clases, que estan relacionadas con
+     * la clase Serie.
+     */
     public void guardarCSV(){
         // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
         char nuevoSeparador = ';';
@@ -316,6 +432,11 @@ public class Controlador {
         }
     }
 
+    /**
+     * Llama a los metodos necesarios para guardar toda la informacion en el XML.
+     * @throws ParserConfigurationException Esta excepción es lanzada cuando ocurre
+     * un error durante la configuración de un parser de XML.
+     */
     public void guardarXML() throws ParserConfigurationException {
         File outpuFile = new File("src/main/series.xml");
         crearDocument();
@@ -325,6 +446,9 @@ public class Controlador {
 
     }
 
+    /**
+     * Crea el document que se escribira en el XML.
+     */
     public void crearDocument(){
         try {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -334,15 +458,37 @@ public class Controlador {
             throw new RuntimeException();
         }
     };
+
+    /**
+     * Crea un nodo/elemento listo para ser añadido con la informacion
+     * recibida.
+     * @param name El nombre que tendra el elemento/nodo XML.
+     * @param content Texto plano o informacion que ira dentro del
+     *                elemento/nod XML.
+     * @return Retorna un nodo/elemento XML listo para ser añadido.
+     */
     public Node createNode(String name, String content){
         Node MyNode = document.createElement(name);
         Node MyNodeText = document.createTextNode(content);
         MyNode.appendChild(MyNodeText);
         return MyNode;
     }
+
+    /**
+     * Añade el nodo/elemento XML a la estructura.
+     * @param pare Elemento/nodo XML una capa superior a fill.
+     * @param fill Elemento/nodo XML que se encuentra dentro de
+     *             padre.
+     */
     public void afegeixNode(Node pare, Node fill){
         pare.appendChild(fill);
     }
+
+    /**
+     * Añade las series a la estructura del XML
+     * @return Si retorna 0 es que se a ejecutado correctamente
+     * en cambio si devuelve 1 es que a surgido un error.
+     */
     public int addSerieToDOM() {
         try {
             for (Serie serie:series) {
@@ -387,6 +533,18 @@ public class Controlador {
         }
     }
 
+    /**
+     * Guarda todos los estudios en una lista de nodos
+     * dentro del nodo estudios, en el que cada uno
+     * pertence a un nodo estudio que contiene la
+     * informacion del estudio.
+     * @param nodeSerie Nodo de la actual serie a la
+     *                  que pertenece el estudio.
+     * @param estudios Es la lista de estudios de
+     *                 la serie a la que pertenece.
+     * @return devuelve el nodo que contiene todos
+     * los estudios de la serie a la que pertenecen.
+     */
     private Node afegeixEstudios(Node nodeSerie, List<Estudio> estudios){
         Node nodeEstudios = document.createElement("Estudios");
         for (Estudio estudio:estudios) {
@@ -403,6 +561,18 @@ public class Controlador {
         }
         return nodeEstudios;
     }
+    /**
+     * Guarda todos los generos en una lista de nodos
+     * dentro del nodo generos, en el que cada uno
+     * pertence a un nodo genero que contiene la
+     * informacion del genero.
+     * @param nodeSerie Nodo de la actual serie a la
+     *                  que pertenece el genero.
+     * @param generos Es la lista de generos de
+     *                 la serie a la que pertenece.
+     * @return devuelve el nodo que contiene todos
+     * los generos de la serie a la que pertenecen.
+     */
     private Node afegeixGeneros(Node nodeSerie, List<Genero> generos){
         Node nodeGeneros = document.createElement("Generos");
         for (Genero genero:generos) {
@@ -420,7 +590,13 @@ public class Controlador {
         return nodeGeneros;
     }
 
-
+    /**
+     * Guarda toda la estructura guardada en el XML con el formato
+     * correcto.
+     * @param file Fichero en el que se guarda el XML
+     * @return Si retorna 0 es que se a ejecutado correctamente
+     * en cambio si devuelve 1 es que a surgido un error.
+     */
     public int saveDOMAsFile(File file) {
 
         // Write the content into an XML file
@@ -445,6 +621,12 @@ public class Controlador {
             return -1;
         }
     }
+
+    /**
+     * Crea la raiz del XML.
+     * @return Si retorna 0 es que se a ejecutado correctamente
+     * en cambio si devuelve 1 es que a surgido un error.
+     */
     public int createRootNode(){
         try {
             Element rootElement = document.createElement("Series");
