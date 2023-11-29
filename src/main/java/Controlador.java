@@ -5,7 +5,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import com.opencsv.CSVWriter;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -22,6 +34,7 @@ public class Controlador {
     private List<Genero> generos = new ArrayList<>();
     private final Map<String, String> map_mes = new HashMap<>();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
+    Document document;
 
     public Controlador() {
         map_mes();
@@ -303,8 +316,144 @@ public class Controlador {
         }
     }
 
+    public void guardarXML() throws ParserConfigurationException {
+        File outpuFile = new File("src/main/series.xml");
+        crearDocument();
+        createRootNode();
+        addSerieToDOM();
+        saveDOMAsFile(outpuFile);
+
+    }
+
+    public void crearDocument(){
+        try {
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = dbf.newDocumentBuilder();
+            document = builder.newDocument();
+        }catch (Exception e){
+            throw new RuntimeException();
+        }
+    };
+    public Node createNode(String name, String content){
+        Node MyNode = document.createElement(name);
+        Node MyNodeText = document.createTextNode(content);
+        MyNode.appendChild(MyNodeText);
+        return MyNode;
+    }
+    public void afegeixNode(Node pare, Node fill){
+        pare.appendChild(fill);
+    }
+    public int addSerieToDOM() {
+        try {
+            for (Serie serie:series) {
+                Node nodeSerie = document.createElement("Serie");
+
+                Node nodeID = createNode("ID", String.valueOf(serie.getId()));
+                afegeixNode(nodeSerie, nodeID);
+                Node nodeTitulo = createNode("Titulo", serie.getTitulo());
+                afegeixNode(nodeSerie, nodeTitulo);
+                Node nodeImg = createNode("Imagen", serie.getImagen());
+                afegeixNode(nodeSerie, nodeImg);
+                Node nodeTipo = createNode("Tipo", serie.getTipo());
+                afegeixNode(nodeSerie, nodeTipo);
+                Node nodeEstado = createNode("Estado", serie.getEstado());
+                afegeixNode(nodeSerie, nodeEstado);
+                Node nodeFecha = createNode("FechaEstreno", String.valueOf(serie.getFechaEstreno()));
+                afegeixNode(nodeSerie, nodeFecha);
+                Node nodeLicencia = createNode("Licencia", serie.getLicencia());
+                afegeixNode(nodeSerie, nodeLicencia);
+                Node nodeEstudios = afegeixEstudios(nodeSerie, serie.getEstudios());
+                afegeixNode(nodeSerie, nodeEstudios);
+                Node nodeSrc = createNode("Src", serie.getSrc());
+                afegeixNode(nodeSerie, nodeSrc);
+                Node nodeGeneros = afegeixGeneros(nodeSerie, serie.getGeneros());
+                afegeixNode(nodeSerie, nodeGeneros);
+                Node nodeDuracion = createNode("Duracion", String.valueOf(serie.getDuracion()));
+                afegeixNode(nodeSerie, nodeDuracion);
+                Node nodeDescripcion = createNode("Descripcion", serie.getDescripcion());
+                afegeixNode(nodeSerie, nodeDescripcion);
 
 
 
+                Node nodeArrel = document.getChildNodes().item(0);
+
+                nodeArrel.appendChild(nodeSerie);
+            }
+            return 0;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
+
+    private Node afegeixEstudios(Node nodeSerie, List<Estudio> estudios){
+        Node nodeEstudios = document.createElement("Estudios");
+        for (Estudio estudio:estudios) {
+            Node nodeEstudio = document.createElement("Estudio");
+            afegeixNode(nodeEstudios, nodeEstudio);
+            Node nodeNombre = createNode("Nombre", estudio.getNombre());
+            afegeixNode(nodeEstudio, nodeNombre);
+            Node nodeLink = createNode("Link", estudio.getLink());
+            afegeixNode(nodeEstudio, nodeLink);
+            Node nodeFecha = createNode("FechaCreacion", String.valueOf(estudio.getFechaCreacion()));
+            afegeixNode(nodeEstudio, nodeFecha);
+            Node nodeSeries = createNode("Series", String.valueOf(estudio.getSeries()));
+            afegeixNode(nodeEstudio, nodeSeries);
+        }
+        return nodeEstudios;
+    }
+    private Node afegeixGeneros(Node nodeSerie, List<Genero> generos){
+        Node nodeGeneros = document.createElement("Generos");
+        for (Genero genero:generos) {
+            Node nodeGenero = document.createElement("Genero");
+            afegeixNode(nodeGeneros, nodeGenero);
+            Node nodeNombre = createNode("Nombre", genero.getNombre());
+            afegeixNode(nodeGenero, nodeNombre);
+            Node nodeLink = createNode("Link", genero.getLink());
+            afegeixNode(nodeGenero, nodeLink);
+            Node nodeDescripcion = createNode("Descripcion", genero.getDescripcion());
+            afegeixNode(nodeGenero, nodeDescripcion);
+            Node nodeSeries = createNode("Series", String.valueOf(genero.getSeries()));
+            afegeixNode(nodeGenero, nodeSeries);
+        }
+        return nodeGeneros;
+    }
+
+
+    public int saveDOMAsFile(File file) {
+
+        // Write the content into an XML file
+        try {
+            // Prepare the transformation
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+            DOMSource domSource = new DOMSource(document);
+            StreamResult streamResult = new StreamResult(file);
+            // Execute the transform
+            transformer.transform(domSource, streamResult);
+
+            // Output to console (testing)
+            System.out.println("\n## DOM saved as file in: "+file.getPath()+"\n");
+            StreamResult consoleResult = new StreamResult(System.out);
+            transformer.transform(domSource, consoleResult);
+
+            return 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
+    public int createRootNode(){
+        try {
+            Element rootElement = document.createElement("Series");
+            document.appendChild(rootElement);
+            return 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
 
 }

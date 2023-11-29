@@ -20,7 +20,7 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 3;AT-X;https://myanimelist.net/anime/producer/238/AT-X;2000-06-26;412
 3;Sony Music Communications;https://myanimelist.net/anime/producer/737/Sony_Music_Communications;1987-08-21;62
 3;Doga Kobo;https://myanimelist.net/anime/producer/95/Doga_Kobo;1973-07-11;97
-4;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1037
+4;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1041
 4;Victor Entertainment;https://myanimelist.net/anime/producer/123/Victor_Entertainment;1972-04-25;104
 4;Gonzo;https://myanimelist.net/anime/producer/3/Gonzo;2000-02-29;143
 5;Aniplex;https://myanimelist.net/anime/producer/17/Aniplex;1995-09-01;594
@@ -93,9 +93,9 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 13;TV Tokyo;https://myanimelist.net/anime/producer/16/TV_Tokyo;1964-04-12;589
 13;Geneon Universal Entertainment;https://myanimelist.net/anime/producer/31/Geneon_Universal_Entertainment;null;117
 13;Manglobe;https://myanimelist.net/anime/producer/32/Manglobe;2002-02-07;35
-14;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1037
+14;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1041
 14;Shueisha;https://myanimelist.net/anime/producer/1365/Shueisha;null;312
-14;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+14;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 15;TBS;https://myanimelist.net/anime/producer/145/TBS;2000-03-21;251
 15;Kodansha;https://myanimelist.net/anime/producer/159/Kodansha;1909-11-01;316
 15;DAX Production;https://myanimelist.net/anime/producer/315/DAX_Production;2003-08-01;223
@@ -142,9 +142,9 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 21;Movic;https://myanimelist.net/anime/producer/166/Movic;1983-10-01;439
 21;DAX Production;https://myanimelist.net/anime/producer/315/DAX_Production;2003-08-01;223
 21;feel.;https://myanimelist.net/anime/producer/91/feel;2002-12-26;74
-22;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1037
+22;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1041
 22;Shueisha;https://myanimelist.net/anime/producer/1365/Shueisha;null;312
-22;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+22;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 23;DAX Production;https://myanimelist.net/anime/producer/315/DAX_Production;2003-08-01;223
 23;Dream Creation;https://myanimelist.net/anime/producer/615/Dream_Creation;2009-06-02;29
 23;Seven;https://myanimelist.net/anime/producer/541/Seven;2007-09-01;94
@@ -169,9 +169,9 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 27;Kadokawa Media House;https://myanimelist.net/anime/producer/1551/Kadokawa_Media_House;1983-06-08;97
 27;Kadokawa;https://myanimelist.net/anime/producer/1696/Kadokawa;2014-10-01;374
 27;AtelierPontdarc;https://myanimelist.net/anime/producer/2298/AtelierPontdarc;2020-07-01;3
-28;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1037
+28;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1041
 28;Shueisha;https://myanimelist.net/anime/producer/1365/Shueisha;null;312
-28;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+28;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 29;Dentsu;https://myanimelist.net/anime/producer/53/Dentsu;1901-07-01;377
 29;Marvelous Entertainment;https://myanimelist.net/anime/producer/82/Marvelous_Entertainment;1997-06-25;62
 29;Kodansha;https://myanimelist.net/anime/producer/159/Kodansha;1909-11-01;316
@@ -183,7 +183,7 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 29;Ajia-do;https://myanimelist.net/anime/producer/30/Ajia-do;1978-10-04;67
 30;Lantis;https://myanimelist.net/anime/producer/104/Lantis;1999-11-26;492
 30;Kadokawa Shoten;https://myanimelist.net/anime/producer/113/Kadokawa_Shoten;1954-04-02;214
-30;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+30;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 31;Frontier Works;https://myanimelist.net/anime/producer/61/Frontier_Works;2002-08-01;161
 31;Movic;https://myanimelist.net/anime/producer/166/Movic;1983-10-01;439
 31;AT-X;https://myanimelist.net/anime/producer/238/AT-X;2000-06-26;412
@@ -344,7 +344,7 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 57;Sankyo;https://myanimelist.net/anime/producer/2680/Sankyo_;null;3
 57;Bibury Animation Studios;https://myanimelist.net/anime/producer/1722/Bibury_Animation_Studios;2017-05-01;12
 58;Kadokawa Shoten;https://myanimelist.net/anime/producer/113/Kadokawa_Shoten;1954-04-02;214
-58;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+58;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 59;Pony Canyon;https://myanimelist.net/anime/producer/144/Pony_Canyon;1966-10-01;411
 59;Sanrio;https://myanimelist.net/anime/producer/150/Sanrio;1980-08-10;214
 59;Pierrot Plus;https://myanimelist.net/anime/producer/1129/Pierrot_Plus;2009-10-01;32
@@ -366,12 +366,12 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 63;Tokuma Shoten;https://myanimelist.net/anime/producer/382/Tokuma_Shoten;1954-03-19;40
 63;8bit;https://myanimelist.net/anime/producer/441/8bit;2008-09-01;61
 64;Studio Deen;https://myanimelist.net/anime/producer/37/Studio_Deen;1975-03-14;319
-65;Studio Deen;https://myanimelist.net/anime/producer/37/Studio_Deen;1975-03-14;319
-66;Aniplex;https://myanimelist.net/anime/producer/17/Aniplex;1995-09-01;594
-66;Tokyo MX;https://myanimelist.net/anime/producer/1211/Tokyo_MX;1993-04-30;191
-66;BS11;https://myanimelist.net/anime/producer/1416/BS11;1999-08-23;156
-66;Contents Seed;https://myanimelist.net/anime/producer/1554/Contents_Seed;2012-08-01;26
-66;Silver;https://myanimelist.net/anime/producer/1873/Silver;2001-02-01;9
+65;Aniplex;https://myanimelist.net/anime/producer/17/Aniplex;1995-09-01;594
+65;Tokyo MX;https://myanimelist.net/anime/producer/1211/Tokyo_MX;1993-04-30;191
+65;BS11;https://myanimelist.net/anime/producer/1416/BS11;1999-08-23;156
+65;Contents Seed;https://myanimelist.net/anime/producer/1554/Contents_Seed;2012-08-01;26
+65;Silver;https://myanimelist.net/anime/producer/1873/Silver;2001-02-01;9
+66;Studio Deen;https://myanimelist.net/anime/producer/37/Studio_Deen;1975-03-14;319
 67;Earth Star Entertainment;https://myanimelist.net/anime/producer/925/Earth_Star_Entertainment;1939-06-01;37
 67;Doga Kobo;https://myanimelist.net/anime/producer/95/Doga_Kobo;1973-07-11;97
 68;Youmex;https://myanimelist.net/anime/producer/220/Youmex;null;21
@@ -394,15 +394,15 @@ ID_SERIE;NOMBRE;LINK;FECHA_CREACION;SERIES
 75;Good Smile Company;https://myanimelist.net/anime/producer/1261/Good_Smile_Company;2001-05-01;101
 75;Nippon Cultural Broadcasting;https://myanimelist.net/anime/producer/1577/Nippon_Cultural_Broadcasting;1951-04-21;6
 75;Picture Magic;https://myanimelist.net/anime/producer/78/Picture_Magic;1995-01-01;22
-76;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1037
-76;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+76;NHK;https://myanimelist.net/anime/producer/111/NHK;1950-06-01;1041
+76;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 77;Barnum Studio;https://myanimelist.net/anime/producer/271/Barnum_Studio;2003-02-27;23
 77;Project No.9;https://myanimelist.net/anime/producer/439/Project_No9;2009-02-09;43
 78;Lantis;https://myanimelist.net/anime/producer/104/Lantis;1999-11-26;492
 78;Happinet Pictures;https://myanimelist.net/anime/producer/787/Happinet_Pictures;1969-06-07;47
 78;TNK;https://myanimelist.net/anime/producer/120/TNK;1999-01-29;57
 79;Shueisha;https://myanimelist.net/anime/producer/1365/Shueisha;null;312
-79;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;420
+79;J.C.Staff;https://myanimelist.net/anime/producer/7/JCStaff;1986-01-18;421
 80;DAX Production;https://myanimelist.net/anime/producer/315/DAX_Production;2003-08-01;223
 80;Yumeta Company;https://myanimelist.net/anime/producer/96/Yumeta_Company;1990-10-01;46
 81;AQUAPLUS;https://myanimelist.net/anime/producer/1329/AQUAPLUS;null;5
