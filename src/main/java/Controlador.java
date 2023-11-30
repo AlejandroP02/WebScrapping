@@ -70,6 +70,11 @@ public class Controlador {
      * Sirve para contener la estructura del XML.
      */
     Document document;
+    /**
+     * Si en el enlace hay mas de 100 series se separa en paginas
+     * y entonces se usa esta varible.
+     */
+    int pages;
 
     /**
      * El constructor del controlador en el que se llama al
@@ -124,10 +129,37 @@ public class Controlador {
         options.setBinary("/home/usuario/Descargas/firefox-118.0.2/firefox/firefox");
 
         WebDriver driver = new FirefoxDriver(options);
-        driver.get("https://myanimelist.net/anime/genre/69/Otaku_Culture");
-        guardarLinksSeries(driver);
+        String link = "https://myanimelist.net/anime/genre/62/Isekai";
+        driver.get(link);
+        paginas(driver);
+        System.out.println("paginas: "+pages);
+        for (int i = 1; i <= pages ; i++) {
+            driver.get(link+"?page="+i);
+            guardarLinksSeries(driver);
+        }
         guardarSeries(driver);
         driver.quit();
+    }
+
+    /**
+     * Acepta las cookies y luego en base a las series que hay
+     * en el genero los divide entre 100 y redondea hacia
+     * arriba para saber cuantas paginas hay.
+     * @param driver Contine la pagina principal de la que se
+     *               extre informacion.
+     */
+    public void paginas(WebDriver driver){
+        sleep(2000);
+        WebElement cookies = driver.findElement(By.className("css-47sehv"));
+        cookies.click();
+        List<WebElement> num = driver.findElements(By.className("fw-n"));
+        int series = 0;
+        for (WebElement s:num) {
+            if(s.getText().contains("(") && s.getText().contains(")")){
+                series = Integer.parseInt(s.getText().replaceAll("\\(","").replaceAll("\\)","").replaceAll(",",""));
+            }
+        }
+        pages= (int)Math.ceil(series/100f);
     }
 
     /**
@@ -137,9 +169,7 @@ public class Controlador {
      *               que contiene el enlaces.
      */
     public void guardarLinksSeries(WebDriver driver){
-        sleep(5000);
-        WebElement cookies = driver.findElement(By.className("css-47sehv"));
-        cookies.click();
+        sleep(3000);
         List<WebElement> box = driver.findElements(By.className("js-anime-category-producer"));
         for (WebElement a:box) {
             WebElement title = a.findElement(By.className("title"));
@@ -162,7 +192,7 @@ public class Controlador {
             WebElement serie = driver.findElement(By.className("h1_bold_none"));
             String descripcion = driver.findElement(By.className("rightside")).findElement(By.tagName("p")).getText().replaceAll("\n"," ");;
             String titulo = serie.findElement(By.tagName("strong")).getText();
-            String imagen = driver.findElement(By.xpath("/html/body/div[2]/div[2]/div[3]/div[2]/table/tbody/tr/td[1]/div/div[1]/a/img")).getAttribute("src");
+            String imagen = driver.findElement(By.className("leftside")).findElement(By.tagName("img")).getAttribute("src");
             List<WebElement> series = driver.findElements(By.className("spaceit_pad"));
             String tipo="";
             int episodios=0;
@@ -175,37 +205,45 @@ public class Controlador {
             String src="";
             float duracion=0f;
             for (WebElement e:series) {
-                if(e.getText().contains("Type")){
+                if(e.getText().contains("Type: ")){
                     tipo = e.getText().split(": ")[1];
-                }else if(e.getText().contains("Episodes")){
+                }else if(e.getText().contains("Episodes: ")){
                     if(e.getText().split(": ")[1].contains("Unknown")){
                         episodios=0;
                     }else{
                         episodios = Integer.parseInt(e.getText().split(": ")[1]);
                     }
-                }if(e.getText().contains("Status")){
+                }if(e.getText().contains("Status: ")){
                     estado = e.getText().split(": ")[1];
-                }else if(e.getText().contains("Aired")){
+                }else if(e.getText().contains("Aired: ")){
                     if(e.getText().split(": ")[1].contains("Not available") || e.getText().split(": ")[1].contains("?")){
                         fechaEstreno=null;
+                    }else if(e.getText().split(": ")[1].split(" ").length==2){
+                        fecha= e.getText().split(": ")[1].replaceAll(",", "");
+                        fecha = "01/"+map_mes.get(fecha.split(" ")[0])+"/"+fecha.split(" ")[1];
+                        fechaEstreno= LocalDate.parse(fecha, formatter);
+                    }else if(e.getText().split(": ")[1].split(" ").length==1){
+                        fecha= e.getText().split(": ")[1].replaceAll(",", "");
+                        fecha = "01/01/"+fecha.split(" ")[0];
+                        fechaEstreno= LocalDate.parse(fecha, formatter);
                     }else{
                         fecha= e.getText().split(": ")[1].split("to")[0].replaceAll(",", "");
                         fecha = fecha.split(" ")[1]+"/"+map_mes.get(fecha.split(" ")[0])+"/"+fecha.split(" ")[2];
                         fechaEstreno = LocalDate.parse(fecha, formatter);
                     }
-                }else if(e.getText().contains("Producers") || e.getText().contains("Studios")){
+                }else if(e.getText().contains("Producers: ") || e.getText().contains("Studios: ")){
                     if(!e.getText().contains("add some")){
                         estudiosL.addAll(guardarLinksEstudios(e));
                     }
-                }else if(e.getText().contains("Licensors")){
+                }else if(e.getText().contains("Licensors: ")){
                     licencia = e.getText().split(": ")[1].replaceAll(", add some", "");
-                }else if(e.getText().contains("Source")){
+                }else if(e.getText().contains("Source: ")){
                     src = e.getText().split(": ")[1];
-                }else if(e.getText().contains("Genre") || e.getText().contains("Themes") || e.getText().contains("Demographic")){
+                }else if(e.getText().contains("Genre: ") || e.getText().contains("Themes: ") || e.getText().contains("Demographic: ")){
                     if(!e.getText().contains("add some")){
                         generoL.addAll(guardarLinksGeneros(e));
                     }
-                }else if(e.getText().contains("Duration")){
+                }else if(e.getText().contains("Duration: ")){
                     if(e.getText().split(": ")[1].contains("Unknown")){
                         duracion=0;
                     }else{
@@ -284,8 +322,10 @@ public class Controlador {
                 int series = Integer.parseInt(cuadroHorizontal.findElement(By.className("on")).getText().replaceAll("All \\(", "").replace(")", ""));
                 List<WebElement> contentLeft = driver.findElements(By.className("spaceit_pad"));
                 for (WebElement b:contentLeft) {
-                    if(b.getText().contains("Established")){
-                        if(b.getText().split(": ")[1].split(" ").length==2){
+                    if(b.getText().contains("Established: ")){
+                        if(b.getText().contains("Unknown")){
+                            fechaCreacion=null;
+                        }else if(b.getText().split(": ")[1].split(" ").length==2){
                             fecha= b.getText().split(": ")[1].replaceAll(",", "");
                             fecha = "01/"+map_mes.get(fecha.split(" ")[0])+"/"+fecha.split(" ")[1];
                             fechaCreacion= LocalDate.parse(fecha, formatter);
