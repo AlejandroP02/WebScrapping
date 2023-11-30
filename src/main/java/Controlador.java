@@ -340,12 +340,13 @@ public class Controlador {
                         }
                     }
                 }
-                estudios.add(new Estudio(serie.getId(), titulo, a, fechaCreacion, series));
-                this.estudios.add(new Estudio(titulo, a, fechaCreacion, series));
+                Estudio estudio = new Estudio(titulo, a, fechaCreacion, series);
+                estudios.add(estudio);
+                this.estudios.add(estudio);
             }else{
                 for (Estudio b:this.estudios) {
                     if(b.getLink().equals(a)){
-                        estudios.add(new Estudio(serie.getId(), b.getNombre(), a, b.getFechaCreacion(), b.getSeries()));
+                        estudios.add(b);
                     }
                 }
             }
@@ -369,7 +370,7 @@ public class Controlador {
      * correspondiente.
      */
     public List<Genero> guardarGeneros(WebDriver driver, Serie serie, List<String> links){
-        List<Genero> genero = new ArrayList<>();
+        List<Genero> generos = new ArrayList<>();
         for (String a:links) {
             if(Collections.frequency(linksGeneros, a)<=1){
                 driver.get(a);
@@ -382,7 +383,7 @@ public class Controlador {
                         series = Integer.parseInt(s.getText().replaceAll("\\(","").replaceAll("\\)","").replaceAll(",",""));
                     }
                 }
-                String descripcion="";
+                String descripcion="Descripcion generica";
                 List<WebElement> ps = driver.findElements(By.tagName("p"));
                 for (WebElement p:ps) {
                     if(p.getAttribute("class").contains("genre-description")){
@@ -390,18 +391,19 @@ public class Controlador {
                     }
 
                 }
-                genero.add(new Genero(serie.getId(), titulo, a, descripcion, series));
-                this.generos.add(new Genero(titulo, a, descripcion, series));
+                Genero genero = new Genero(titulo, a, descripcion, series);
+                generos.add(genero);
+                this.generos.add(genero);
             }else{
                 for (Genero b:this.generos) {
                     if(b.getLink().equals(a)){
-                        genero.add(new Genero(serie.getId(), b.getNombre(), a, b.getDescripcion(), b.getSeries()));
+                        generos.add(b);
                     }
                 }
             }
 
         }
-        return genero;
+        return generos;
     }
 
     /**
@@ -412,33 +414,33 @@ public class Controlador {
      */
     public void guardarCSV(){
         // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
-        char nuevoSeparador = ';';
         String csvSeries="src/main/series.csv";
         String csvEstudios="src/main/estudios.csv";
         String csvGeneros="src/main/generos.csv";
 
         try {
-            CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries), nuevoSeparador,
-                    CSVWriter.NO_QUOTE_CHARACTER,
+            CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries), ',',
+                    CSVWriter.DEFAULT_QUOTE_CHARACTER,
                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
-            CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios), nuevoSeparador,
-                    CSVWriter.NO_QUOTE_CHARACTER,
+            CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios), ',',
+                    CSVWriter.DEFAULT_QUOTE_CHARACTER,
                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
-            CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros), nuevoSeparador,
-                    CSVWriter.NO_QUOTE_CHARACTER,
+            CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros), ',',
+                    CSVWriter.DEFAULT_QUOTE_CHARACTER,
                     CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
-            String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "SRC", "DURACION"};
+            String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "LICENCIA", "ID_ESTUDIOS", "SRC", "ID_GENEROS", "DURACION","DESCRIPCION"};
             writer1.writeNext(data1);
-            data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "FECHA_CREACION", "SERIES"};
+            data1 = new String[]{"ID", "NOMBRE", "LINK", "FECHA_CREACION", "SERIES"};
             writer2.writeNext(data1);
-            data1 = new String[]{"ID_SERIE", "NOMBRE", "LINK", "DESCRIPCION", "SERIES"};
+            data1 = new String[]{"ID", "NOMBRE", "LINK", "DESCRIPCION", "SERIES"};
             writer3.writeNext(data1);
+            String[] data;
             // Escribe las líneas de datos al archivo CSV
             for (Serie serie : this.series) {
-                String[] data = {
+                data = new String[]{
                         String.valueOf(serie.getId()),
                         serie.getTitulo(),
                         serie.getImagen(),
@@ -446,20 +448,22 @@ public class Controlador {
                         String.valueOf(serie.getEpisodios()),
                         serie.getEstado(),
                         String.valueOf(serie.getFechaEstreno()),
+                        serie.getLicencia(),
+                        serie.getEstudios().toString(),
                         serie.getSrc(),
+                        serie.getGeneros().toString(),
                         String.valueOf(serie.getDuracion()),
                         serie.getDescripcion()
                 };
-                //System.out.println(Arrays.toString(data));
                 writer1.writeNext(data);
-                for (Estudio estudio:serie.getEstudios()) {
-                    data = new String[]{String.valueOf(serie.getId()), estudio.getNombre(), estudio.getLink(), String.valueOf(estudio.getFechaCreacion()), String.valueOf(estudio.getSeries())};
-                    writer2.writeNext(data);
-                }
-                for (Genero genero:serie.getGeneros()) {
-                    data = new String[]{String.valueOf(serie.getId()), genero.getNombre(), genero.getLink(), genero.getDescripcion(), String.valueOf(genero.getSeries())};
-                    writer3.writeNext(data);
-                }
+            }
+            for (Estudio estudio:estudios) {
+                data = new String[]{String.valueOf(estudio.getId()), estudio.getNombre(), estudio.getLink(), String.valueOf(estudio.getFechaCreacion()), String.valueOf(estudio.getSeries())};
+                writer2.writeNext(data);
+            }
+            for (Genero genero:generos) {
+                data = new String[]{String.valueOf(genero.getId()), genero.getNombre(), genero.getLink(), genero.getDescripcion(), String.valueOf(genero.getSeries())};
+                writer3.writeNext(data);
             }
             writer3.close();
             writer2.close();
@@ -590,6 +594,8 @@ public class Controlador {
         for (Estudio estudio:estudios) {
             Node nodeEstudio = document.createElement("Estudio");
             afegeixNode(nodeEstudios, nodeEstudio);
+            Node nodeId = createNode("ID", String.valueOf(estudio.getId()));
+            afegeixNode(nodeEstudio, nodeId);
             Node nodeNombre = createNode("Nombre", estudio.getNombre());
             afegeixNode(nodeEstudio, nodeNombre);
             Node nodeLink = createNode("Link", estudio.getLink());
@@ -618,6 +624,8 @@ public class Controlador {
         for (Genero genero:generos) {
             Node nodeGenero = document.createElement("Genero");
             afegeixNode(nodeGeneros, nodeGenero);
+            Node nodeId = createNode("ID", String.valueOf(genero.getId()));
+            afegeixNode(nodeGenero, nodeId);
             Node nodeNombre = createNode("Nombre", genero.getNombre());
             afegeixNode(nodeGenero, nodeNombre);
             Node nodeLink = createNode("Link", genero.getLink());

@@ -1,23 +1,23 @@
 public class Genero {
-    private int idSerie;
+    static int idMas = 1;
+    private int id;
     private String nombre;
     private String link;
     private String descripcion;
     private int series;
 
-    public Genero(int idSerie, String nombre, String link, String descripcion, int series) {
-        this.idSerie = idSerie;
+
+    public Genero(String nombre, String link, String descripcion, int series) {
+        id=idMas;
+        idMas++;
         this.nombre = nombre;
         this.link = link;
         this.descripcion = descripcion;
         this.series = series;
     }
 
-    public Genero(String nombre, String link, String descripcion, int series) {
-        this.nombre = nombre;
-        this.link = link;
-        this.descripcion = descripcion;
-        this.series = series;
+    public int getId() {
+        return id;
     }
 
     public String getLink() {
@@ -38,8 +38,6 @@ public class Genero {
 
     @Override
     public String toString() {
-        return "Genero{" +
-                "nombre='" + nombre + '\'' +
-                '}';
+        return ""+id;
     }
 }

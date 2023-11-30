@@ -1,24 +1,24 @@
 import java.time.LocalDate;
 
 public class Estudio {
-    private int idSerie;
+    static int idMas = 1;
+    private int id;
     private String nombre;
     private String link;
     private LocalDate fechaCreacion;
     private int series;
 
-    public Estudio(int idSerie, String nombre, String link, LocalDate fechaCreacion, int series) {
-        this.idSerie = idSerie;
+    public Estudio(String nombre, String link, LocalDate fechaCreacion, int series) {
+        id=idMas;
+        idMas++;
         this.nombre = nombre;
         this.link = link;
         this.fechaCreacion = fechaCreacion;
         this.series = series;
     }
-    public Estudio(String nombre, String link, LocalDate fechaCreacion, int series) {
-        this.nombre = nombre;
-        this.link = link;
-        this.fechaCreacion = fechaCreacion;
-        this.series = series;
+
+    public int getId() {
+        return id;
     }
 
     public String getNombre() {
@@ -37,4 +37,8 @@ public class Estudio {
         return series;
     }
 
+    @Override
+    public String toString() {
+        return ""+id;
+    }
 }
