@@ -420,15 +420,15 @@ public class Controlador {
         try {
             CSVWriter writer1 = new CSVWriter(new FileWriter(csvSeries), nuevoSeparador,
                     CSVWriter.NO_QUOTE_CHARACTER,
-                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
             CSVWriter writer2 = new CSVWriter(new FileWriter(csvEstudios), nuevoSeparador,
                     CSVWriter.NO_QUOTE_CHARACTER,
-                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
             CSVWriter writer3 = new CSVWriter(new FileWriter(csvGeneros), nuevoSeparador,
                     CSVWriter.NO_QUOTE_CHARACTER,
-                    CSVWriter.NO_ESCAPE_CHARACTER,
+                    CSVWriter.DEFAULT_ESCAPE_CHARACTER,
                     CSVWriter.DEFAULT_LINE_END);
             String[] data1 = {"ID", "TITULO", "IMAGEN", "TIPO", "EPISODIOS", "ESTADO", "FECHA_ESTRENO", "SRC", "DURACION"};
             writer1.writeNext(data1);
