@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Series>
+    <Serie>
+        <ID>1</ID>
+        <Titulo>Kämpfer</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/5/35423.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2009-10-02</FechaEstreno>
+        <Licencia>Sentai Filmworks</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>1</ID>
+                <Nombre>TBS</Nombre>
+                <Link>https://myanimelist.net/anime/producer/145/TBS</Link>
+                <FechaCreacion>2000-03-21</FechaCreacion>
+                <Series>251</Series>
+            </Estudio>
+            <Estudio>
+                <ID>2</ID>
+                <Nombre>RAY</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1581/RAY</Link>
+                <FechaCreacion>1981-06-01</FechaCreacion>
+                <Series>39</Series>
+            </Estudio>
+            <Estudio>
+                <ID>3</ID>
+                <Nombre>Nomad</Nombre>
+                <Link>https://myanimelist.net/anime/producer/70/Nomad</Link>
+                <FechaCreacion>2003-07-01</FechaCreacion>
+                <Series>37</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>1</ID>
+                <Nombre>Harem Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/35/Harem</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>458</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Waking up transformed into a beautiful girl might be the stuff of some guys' fantasies, but when the suddenly effeminatized Natsuru is informed by a stuffed tiger that he's now a Kampfer, a mystical fighter who has to fight other Kampfers in female form, his life becomes a living nightmare!  Putting aside the obvious "plumbing" issues, Natsuru's best childhood friend turns out to swing the other way and SHE has a crush on his new female body. Not complex enough? Natsuru's school has separate sections for boys and girls, so he and she are now double enrolled. The rumor-mill has it that he's dating herself. And there are other Kampfers attending the school who want to take her out, and he's not sure which ones mean "on a date" and which ones mean "permanently." Oh, and did we mention that some Kampfers use swords and guns?! Hormones, fists, and other body parts will fly as the daring, new gender-bender defender must become a contender or die!  (Source: Sentai Filmworks)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>2</ID>
+        <Titulo>Ranma ½</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/13/6441.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1989-04-15</FechaEstreno>
+        <Licencia>VIZ Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>4</ID>
+                <Nombre>Shogakukan-Shueisha Productions</Nombre>
+                <Link>https://myanimelist.net/anime/producer/62/Shogakukan-Shueisha_Productions</Link>
+                <FechaCreacion>1967-06-26</FechaCreacion>
+                <Series>187</Series>
+            </Estudio>
+            <Estudio>
+                <ID>5</ID>
+                <Nombre>Kitty Films</Nombre>
+                <Link>https://myanimelist.net/anime/producer/99/Kitty_Films</Link>
+                <FechaCreacion>1982-03-24</FechaCreacion>
+                <Series>45</Series>
+            </Estudio>
+            <Estudio>
+                <ID>6</ID>
+                <Nombre>Fuji TV</Nombre>
+                <Link>https://myanimelist.net/anime/producer/169/Fuji_TV</Link>
+                <FechaCreacion>1959-03-01</FechaCreacion>
+                <Series>389</Series>
+            </Estudio>
+            <Estudio>
+                <ID>7</ID>
+                <Nombre>Shogakukan</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1430/Shogakukan</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>117</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>4</ID>
+                <Nombre>Martial Arts Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/17/Martial_Arts</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>597</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Ranma Saotome is a top-class martial artist and prodigy at the Saotome "Anything-Goes" school of martial arts. While training in China, he and his father meet a terrible fate when they accidentally fall into a cursed spring. Now, Ranma is cursed to turn into a girl when splashed with cold water, and only hot water can turn him back into a boy.  Things are only complicated further when Ranma discovers that his father has arranged for him to marry one of Soun Tendo's three daughters in order to secure the future of the Tendo dojo. Though Soun learns of Ranma's predicament, he is still determined to go ahead with the engagement, and chooses his youngest daughter Akane, who happens to be a skilled martial artist herself and is notorious for hating men.  Ranma ½ follows the hilarious adventures of Ranma and Akane as they encounter various opponents, meet new love interests, and find different ways to make each other angry, all while their engagement hangs over their head.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>3</ID>
+        <Titulo>Fantasy Bishoujo Juniku Ojisan to</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1430/120065.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2022-01-12</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>9</ID>
+                <Nombre>TV Tokyo</Nombre>
+                <Link>https://myanimelist.net/anime/producer/16/TV_Tokyo</Link>
+                <FechaCreacion>1964-04-12</FechaCreacion>
+                <Series>589</Series>
+            </Estudio>
+            <Estudio>
+                <ID>10</ID>
+                <Nombre>bilibili</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1414/bilibili</Link>
+                <FechaCreacion>2009-06-01</FechaCreacion>
+                <Series>220</Series>
+            </Estudio>
+            <Estudio>
+                <ID>11</ID>
+                <Nombre>Cygames</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1587/Cygames</Link>
+                <FechaCreacion>2011-05-01</FechaCreacion>
+                <Series>38</Series>
+            </Estudio>
+            <Estudio>
+                <ID>12</ID>
+                <Nombre>Bit grooove promotion</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion</Link>
+                <FechaCreacion>2012-05-02</FechaCreacion>
+                <Series>55</Series>
+            </Estudio>
+            <Estudio>
+                <ID>13</ID>
+                <Nombre>Bushiroad Move</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2228/Bushiroad_Move</Link>
+                <FechaCreacion>2016-09-29</FechaCreacion>
+                <Series>13</Series>
+            </Estudio>
+            <Estudio>
+                <ID>14</ID>
+                <Nombre>Music Brains</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2384/Music_Brains</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>1</Series>
+            </Estudio>
+            <Estudio>
+                <ID>15</ID>
+                <Nombre>OLM Team Yoshioka</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2326/OLM_Team_Yoshioka</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>3</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Web manga</Src>
+        <Generos>
+            <Genero>
+                <ID>6</ID>
+                <Nombre>Isekai Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/62/Isekai</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>337</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>7</ID>
+                <Nombre>Parody Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/20/Parody</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>748</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>Since their days as students, Tsukasa Jinguuji has had incredible luck with women due to his good looks; Hinata Tachibana has had almost none, overshadowed by Jinguuji's brilliance. However, while Jinguuji has never shown interest in the opposite sex, Tachibana is always desperate for a girlfriend. Despite their polar differences, they continue to be best friends even in their thirties as salarymen.  One night, the two are returning home from a mixer where Jinguuji was the center of attention as usual. In his drunken rambles, a frustrated Tachibana inadvertently wishes to become a beautiful girl with irresistible charm. As if the heavens were listening, a goddess suddenly shows herself before Jinguuji and Tachibana, transporting them to another world to defeat the Demon Lord and simultaneously granting Tachibana's desire.  Tachibana—now in the body of an impossibly perfect woman—has become so attractive that even Jinguuji is captivated. Moreover, Tachibana grows aware of Jinguuji's stunning appearance, finally understanding his popularity. Before they fall in love with each other, the duo must complete their mission or risk remaining prisoners to their infatuations forever.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>4</ID>
+        <Titulo>Ore, Twintail ni Narimasu.</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/11/75057.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2014-10-10</FechaEstreno>
+        <Licencia>Funimation</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>16</ID>
+                <Nombre>Pony Canyon</Nombre>
+                <Link>https://myanimelist.net/anime/producer/144/Pony_Canyon</Link>
+                <FechaCreacion>1966-10-01</FechaCreacion>
+                <Series>411</Series>
+            </Estudio>
+            <Estudio>
+                <ID>1</ID>
+                <Nombre>TBS</Nombre>
+                <Link>https://myanimelist.net/anime/producer/145/TBS</Link>
+                <FechaCreacion>2000-03-21</FechaCreacion>
+                <Series>251</Series>
+            </Estudio>
+            <Estudio>
+                <ID>17</ID>
+                <Nombre>DAX Production</Nombre>
+                <Link>https://myanimelist.net/anime/producer/315/DAX_Production</Link>
+                <FechaCreacion>2003-08-01</FechaCreacion>
+                <Series>223</Series>
+            </Estudio>
+            <Estudio>
+                <ID>18</ID>
+                <Nombre>Daiichikosho</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1215/Daiichikosho</Link>
+                <FechaCreacion>1973-04-16</FechaCreacion>
+                <Series>6</Series>
+            </Estudio>
+            <Estudio>
+                <ID>7</ID>
+                <Nombre>Shogakukan</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1430/Shogakukan</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>117</Series>
+            </Estudio>
+            <Estudio>
+                <ID>19</ID>
+                <Nombre>Production IMS</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1053/Production_IMS</Link>
+                <FechaCreacion>2013-02-14</FechaCreacion>
+                <Series>25</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>7</ID>
+                <Nombre>Parody Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/20/Parody</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>748</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+            <Genero>
+                <ID>8</ID>
+                <Nombre>Super Power Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/31/Super_Power</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>699</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Twintails: the glory of all mankind—or at least that is what first-year high school student Souji Mitsuka believes. At school, Souji spends most of his time daydreaming and rating girls' twintails, even going as far as creating a club dedicated to the hairstyle. His obsession does not go unnoticed, however; when monsters from outer space attack Earth and claim the world's twintails for themselves, a strange woman named Twoearle enlists Souji to fight back using twintails of his own!  By transforming into the twin-tailed warrior Tail Red, Souji combats the vicious alien organization known as Ultimegil, whose main goal is to colonize Earth and steal everyone's spiritual energy, or "attribute power." Alongside fellow twin-tailed fighters Aika Tsube and Erina Shindou, Souji must find a way to defeat the invading army and defend the twintails he holds so dear.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>5</ID>
+        <Titulo>Back Street Girls: Gokudolls</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1484/93140.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2018-07-04</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>20</ID>
+                <Nombre>Toei Video</Nombre>
+                <Link>https://myanimelist.net/anime/producer/141/Toei_Video</Link>
+                <FechaCreacion>1972-11-07</FechaCreacion>
+                <Series>61</Series>
+            </Estudio>
+            <Estudio>
+                <ID>21</ID>
+                <Nombre>Kodansha</Nombre>
+                <Link>https://myanimelist.net/anime/producer/159/Kodansha</Link>
+                <FechaCreacion>1909-11-01</FechaCreacion>
+                <Series>316</Series>
+            </Estudio>
+            <Estudio>
+                <ID>22</ID>
+                <Nombre>J.C.Staff</Nombre>
+                <Link>https://myanimelist.net/anime/producer/7/JCStaff</Link>
+                <FechaCreacion>1986-01-18</FechaCreacion>
+                <Series>421</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>9</ID>
+                <Nombre>Organized Crime Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/68/Organized_Crime</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>84</Series>
+            </Genero>
+            <Genero>
+                <ID>10</ID>
+                <Nombre>Workplace Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/48/Workplace</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>183</Series>
+            </Genero>
+            <Genero>
+                <ID>11</ID>
+                <Nombre>Seinen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/42/Seinen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>995</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>After failing their boss for the last time, yakuza members Kentarou, Ryou, and Kazuhiko are faced with one of two choices: have their organs harvested and sold or take a trip to Thailand for sex reassignment surgery and become pop idols. Now, after a year of excruciating training, the three thugs have been reborn as Airi, Chika, and Mari. Debuting as the amateur idol group The Goku Dolls, the three strive towards becoming top idols.  However, despite the hours of feminizing brainwashing they were forced to endure, the three idols have managed to keep the yakuza spirit alive in their hearts. In order to fix this, their yakuza boss hires Mandarin Kinoshita, a legendary manager who has never had an idol group fail under his management. With their lives now on the line, the reluctant yakuza must work with their new manager to unleash their inner cuteness and become the successful idols that their tyrannical boss can truly be proud of.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>6</ID>
+        <Titulo>Oniichan wa Oshimai!</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1058/131632.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2023-01-05</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>16</ID>
+                <Nombre>Pony Canyon</Nombre>
+                <Link>https://myanimelist.net/anime/producer/144/Pony_Canyon</Link>
+                <FechaCreacion>1966-10-01</FechaCreacion>
+                <Series>411</Series>
+            </Estudio>
+            <Estudio>
+                <ID>23</ID>
+                <Nombre>Movic</Nombre>
+                <Link>https://myanimelist.net/anime/producer/166/Movic</Link>
+                <FechaCreacion>1983-10-01</FechaCreacion>
+                <Series>439</Series>
+            </Estudio>
+            <Estudio>
+                <ID>24</ID>
+                <Nombre>AT-X</Nombre>
+                <Link>https://myanimelist.net/anime/producer/238/AT-X</Link>
+                <FechaCreacion>2000-06-26</FechaCreacion>
+                <Series>412</Series>
+            </Estudio>
+            <Estudio>
+                <ID>25</ID>
+                <Nombre>TOHO animation</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1143/TOHO_animation</Link>
+                <FechaCreacion>1932-01-01</FechaCreacion>
+                <Series>143</Series>
+            </Estudio>
+            <Estudio>
+                <ID>26</ID>
+                <Nombre>Tokyo MX</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1211/Tokyo_MX</Link>
+                <FechaCreacion>1993-04-30</FechaCreacion>
+                <Series>191</Series>
+            </Estudio>
+            <Estudio>
+                <ID>27</ID>
+                <Nombre>Hakuhodo DY Music &amp; Pictures</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1333/Hakuhodo_DY_Music___Pictures</Link>
+                <FechaCreacion>2003-10-01</FechaCreacion>
+                <Series>117</Series>
+            </Estudio>
+            <Estudio>
+                <ID>28</ID>
+                <Nombre>BS11</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1416/BS11</Link>
+                <FechaCreacion>1999-08-23</FechaCreacion>
+                <Series>156</Series>
+            </Estudio>
+            <Estudio>
+                <ID>29</ID>
+                <Nombre>Egg Firm</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1444/Egg_Firm</Link>
+                <FechaCreacion>2015-03-10</FechaCreacion>
+                <Series>41</Series>
+            </Estudio>
+            <Estudio>
+                <ID>30</ID>
+                <Nombre>Ichijinsha</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1582/Ichijinsha</Link>
+                <FechaCreacion>1992-08-20</FechaCreacion>
+                <Series>31</Series>
+            </Estudio>
+            <Estudio>
+                <ID>12</ID>
+                <Nombre>Bit grooove promotion</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2074/Bit_grooove_promotion</Link>
+                <FechaCreacion>2012-05-02</FechaCreacion>
+                <Series>55</Series>
+            </Estudio>
+            <Estudio>
+                <ID>31</ID>
+                <Nombre>Pia</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2111/Pia</Link>
+                <FechaCreacion>1974-12-20</FechaCreacion>
+                <Series>8</Series>
+            </Estudio>
+            <Estudio>
+                <ID>32</ID>
+                <Nombre>Studio Bind</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1993/Studio_Bind</Link>
+                <FechaCreacion>2018-11-01</FechaCreacion>
+                <Series>8</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>12</ID>
+                <Nombre>Comedy Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/4/Comedy</Link>
+                <Descripcion>Uplifting the audience with positive emotion takes priority, eliciting laughter, amusement, or general entertainment. Almost always, comedy stories are episodic or have happy endings.  Nearly every work will use comedy as a plot device to relieve tension, but the overarching narrative must be focused on evoking amusement to be Comedy. Drama and Comedy are not mutually exclusive, but mixing them requires the audience facing human struggle with lightheartedness. Slice of Life and Comedy are incompatible by definition.</Descripcion>
+                <Series>7191</Series>
+            </Genero>
+            <Genero>
+                <ID>13</ID>
+                <Nombre>CGDCT Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/52/CGDCT</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>234</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>Self-professed "home security guard" Mahiro Oyama has not left his home in years, secluding himself in his room playing erotic visual novels. This depraved lifestyle causes his prodigious sister, Mihari, to worry about his well-being. In hopes of solving this problem, she devises a plan to rehabilitate him back to normalcy.  The first part of Mihari's plan is to concoct a medicine that changes her brother's biological constitution into a bona fide female, much to Mahiro's vehement dismay. Stuck in this predicament, Mahiro has no choice but to live out his life as a cute girl until the effect wears off—if it ever does.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>7</ID>
+        <Titulo>Kenja no Deshi wo Nanoru Kenja</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1583/119223.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2022-01-12</FechaEstreno>
+        <Licencia>Funimation</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>17</ID>
+                <Nombre>DAX Production</Nombre>
+                <Link>https://myanimelist.net/anime/producer/315/DAX_Production</Link>
+                <FechaCreacion>2003-08-01</FechaCreacion>
+                <Series>223</Series>
+            </Estudio>
+            <Estudio>
+                <ID>33</ID>
+                <Nombre>MAGES.</Nombre>
+                <Link>https://myanimelist.net/anime/producer/963/MAGES</Link>
+                <FechaCreacion>2011-01-01</FechaCreacion>
+                <Series>58</Series>
+            </Estudio>
+            <Estudio>
+                <ID>34</ID>
+                <Nombre>Kadokawa</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1696/Kadokawa</Link>
+                <FechaCreacion>2014-10-01</FechaCreacion>
+                <Series>374</Series>
+            </Estudio>
+            <Estudio>
+                <ID>35</ID>
+                <Nombre>Micro Magazine Publishing</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1896/Micro_Magazine_Publishing</Link>
+                <FechaCreacion>1984-07-04</FechaCreacion>
+                <Series>10</Series>
+            </Estudio>
+            <Estudio>
+                <ID>36</ID>
+                <Nombre>MAGNET</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1996/MAGNET</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>30</Series>
+            </Estudio>
+            <Estudio>
+                <ID>37</ID>
+                <Nombre>Micro House</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2440/Micro_House</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>4</Series>
+            </Estudio>
+            <Estudio>
+                <ID>38</ID>
+                <Nombre>Studio A-CAT</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1209/Studio_A-CAT</Link>
+                <FechaCreacion>1996-09-01</FechaCreacion>
+                <Series>17</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>6</ID>
+                <Nombre>Isekai Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/62/Isekai</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>337</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>With a dignified veteran's body and a long white beard, summoner mage Dunbalf was one of the strongest player characters in the virtual reality online multiplayer roleplaying game Ark Earth Online, even heralded as a one-man army. Together with the "Nine Wise Mages" and King Solomon, they formed the mage player Kingdom of Alcait. But one day, Dunbalf and the other Nine Wise Mages suddenly go missing, leaving no trace behind.  In an effort to spend his expiring credits, Dunbalf had purchased a cosmetic kit and tinkered with his character; however, he accidentally fell asleep during the customization process. Upon waking up, Dunbalf not only notices that the world of Ark Earth Online has become more realistic, but also discovers that he has turned into a cute girl! After reaching Alcait, he learns it has been 30 years since he supposedly disappeared.  Now tasked with finding the other missing mages by King Solomon, the avid role player proclaims his new identity as Mira—the Pupil of the Wise Man Dunbalf—and ventures forth to prove his legacy.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>8</ID>
+        <Titulo>Mahou Shoujo Ore</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1439/91893.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2018-04-02</FechaEstreno>
+        <Licencia>Discotek Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>39</ID>
+                <Nombre>Genco</Nombre>
+                <Link>https://myanimelist.net/anime/producer/79/Genco</Link>
+                <FechaCreacion>1997-03-01</FechaCreacion>
+                <Series>195</Series>
+            </Estudio>
+            <Estudio>
+                <ID>24</ID>
+                <Nombre>AT-X</Nombre>
+                <Link>https://myanimelist.net/anime/producer/238/AT-X</Link>
+                <FechaCreacion>2000-06-26</FechaCreacion>
+                <Series>412</Series>
+            </Estudio>
+            <Estudio>
+                <ID>40</ID>
+                <Nombre>KlockWorx</Nombre>
+                <Link>https://myanimelist.net/anime/producer/460/KlockWorx</Link>
+                <FechaCreacion>1997-01-24</FechaCreacion>
+                <Series>309</Series>
+            </Estudio>
+            <Estudio>
+                <ID>41</ID>
+                <Nombre>Crunchyroll</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1468/Crunchyroll</Link>
+                <FechaCreacion>2006-09-01</FechaCreacion>
+                <Series>220</Series>
+            </Estudio>
+            <Estudio>
+                <ID>42</ID>
+                <Nombre>My Theater D.D.</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1744/My_Theater_DD</Link>
+                <FechaCreacion>2011-09-16</FechaCreacion>
+                <Series>17</Series>
+            </Estudio>
+            <Estudio>
+                <ID>43</ID>
+                <Nombre>Pierrot Plus</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1129/Pierrot_Plus</Link>
+                <FechaCreacion>2009-10-01</FechaCreacion>
+                <Series>32</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Web manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>14</ID>
+                <Nombre>Mahou Shoujo Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/66/Mahou_Shoujo</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>329</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>Saki Uno is an average 15-year-old girl with a side hustle as a member of the exceptionally unpopular idol duo Magical Twins. Despite this, she absolutely loves the time she spends with her best friend Sakuyo Mikage as she strives to become closer with her childhood crush, Sakuyo's brother Mohiro. Her peaceful life, however, unravels when she finds a yakuza-looking thug trying to enter her house. Forced to invite him inside, Saki learns that her mother used to be a demon fighting Magical Girl, and that her brutish guest is actually a mascot named Kokoro-chan looking to recruit a replacement. Dumbfounded and skeptical, Saki is hesitant accept the request until Kokoro-chan reveals that Mohiro is a target of some cute, squirrel-tailed demons.  Rushing to his side, Saki's overwhelming desire to save Mohiro activates her Love Power, and a daring confession awakens her as a Magical Girl. However, because her body is not suitable for combat, Saki's transformation turns her into a muscle-bound man clad in a pretty dress. Now, as a fully-fledged Magical Girl, Saki must team up with Sakuyo to protect the love of her life from the fluffy, demonic menaces that run rampant in her world.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>9</ID>
+        <Titulo>Ayakashi Triangle</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1078/131921.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2023-01-10</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>44</ID>
+                <Nombre>Aniplex</Nombre>
+                <Link>https://myanimelist.net/anime/producer/17/Aniplex</Link>
+                <FechaCreacion>1995-09-01</FechaCreacion>
+                <Series>594</Series>
+            </Estudio>
+            <Estudio>
+                <ID>45</ID>
+                <Nombre>Yomiuri Telecasting</Nombre>
+                <Link>https://myanimelist.net/anime/producer/76/Yomiuri_Telecasting</Link>
+                <FechaCreacion>1958-02-13</FechaCreacion>
+                <Series>100</Series>
+            </Estudio>
+            <Estudio>
+                <ID>46</ID>
+                <Nombre>Chugai Mining</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1336/Chugai_Mining</Link>
+                <FechaCreacion>1932-05-02</FechaCreacion>
+                <Series>8</Series>
+            </Estudio>
+            <Estudio>
+                <ID>47</ID>
+                <Nombre>Shueisha</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1365/Shueisha</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>312</Series>
+            </Estudio>
+            <Estudio>
+                <ID>28</ID>
+                <Nombre>BS11</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1416/BS11</Link>
+                <FechaCreacion>1999-08-23</FechaCreacion>
+                <Series>156</Series>
+            </Estudio>
+            <Estudio>
+                <ID>48</ID>
+                <Nombre>Marui Group</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1800/Marui_Group</Link>
+                <FechaCreacion>1937-03-30</FechaCreacion>
+                <Series>20</Series>
+            </Estudio>
+            <Estudio>
+                <ID>49</ID>
+                <Nombre>Connect</Nombre>
+                <Link>https://myanimelist.net/anime/producer/957/Connect</Link>
+                <FechaCreacion>2012-04-01</FechaCreacion>
+                <Series>25</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>15</ID>
+                <Nombre>Mythology Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/6/Mythology</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>636</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>Ayakashi are strange, supernatural creatures invisible to the majority of people. Though most are harmless, some ayakashi attack humans to devour their life force. Exorcist ninjas are tasked with protecting people from these spiteful spirits.  Matsuri Kazamaki is a young exorcist ninja born to a prestigious clan. His childhood friend, Suzu Kanade, is an ayakashi medium—an individual with immense vitality that attracts ayakashi. Matsuri deems all ayakashi threatening and wishes to keep Suzu as far from them as possible, but this clashes with her desire to remain close to them. One day, the pair encounters Shirogane, the "King of Ayakashi," who is hellbent on consuming Suzu. As she is about to be eaten, Matsuri comes to the rescue and manages to seal the ayakashi's powers—but not before Shirogane takes revenge by turning him into a girl!  Until he finds a way to transform back, Matsuri must adjust to his new, peculiar lifestyle while fighting against hostile ayakashi. Moreover, Suzu is now conflicted about her feelings toward Matsuri—further plunging their relationship into a state of ambiguity.  [Written by MAL Rewrite]</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>10</ID>
+        <Titulo>Kämpfer für die Liebe</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/2/29811.jpg</Imagen>
+        <Tipo>Special</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2011-03-06</FechaEstreno>
+        <Licencia>Sentai Filmworks</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>50</ID>
+                <Nombre>Lantis</Nombre>
+                <Link>https://myanimelist.net/anime/producer/104/Lantis</Link>
+                <FechaCreacion>1999-11-26</FechaCreacion>
+                <Series>492</Series>
+            </Estudio>
+            <Estudio>
+                <ID>17</ID>
+                <Nombre>DAX Production</Nombre>
+                <Link>https://myanimelist.net/anime/producer/315/DAX_Production</Link>
+                <FechaCreacion>2003-08-01</FechaCreacion>
+                <Series>223</Series>
+            </Estudio>
+            <Estudio>
+                <ID>2</ID>
+                <Nombre>RAY</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1581/RAY</Link>
+                <FechaCreacion>1981-06-01</FechaCreacion>
+                <Series>39</Series>
+            </Estudio>
+            <Estudio>
+                <ID>3</ID>
+                <Nombre>Nomad</Nombre>
+                <Link>https://myanimelist.net/anime/producer/70/Nomad</Link>
+                <FechaCreacion>2003-07-01</FechaCreacion>
+                <Series>37</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>1</ID>
+                <Nombre>Harem Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/35/Harem</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>458</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>A two-episode special. They are designated as Episodes 13 and 14, and the first episode is a direct sequel to the previous series while the second episode is about the trans-sex of Natsuru.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>11</ID>
+        <Titulo>Kashimashi: Girl Meets Girl</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/9/19498.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2006-01-12</FechaEstreno>
+        <Licencia>Media Blasters, Discotek Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>51</ID>
+                <Nombre>Bandai Visual</Nombre>
+                <Link>https://myanimelist.net/anime/producer/23/Bandai_Visual</Link>
+                <FechaCreacion>1983-08-23</FechaCreacion>
+                <Series>435</Series>
+            </Estudio>
+            <Estudio>
+                <ID>50</ID>
+                <Nombre>Lantis</Nombre>
+                <Link>https://myanimelist.net/anime/producer/104/Lantis</Link>
+                <FechaCreacion>1999-11-26</FechaCreacion>
+                <Series>492</Series>
+            </Estudio>
+            <Estudio>
+                <ID>52</ID>
+                <Nombre>Studio Hibari</Nombre>
+                <Link>https://myanimelist.net/anime/producer/101/Studio_Hibari</Link>
+                <FechaCreacion>1979-07-01</FechaCreacion>
+                <Series>73</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>16</ID>
+                <Nombre>Love Polygon Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/64/Love_Polygon</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>90</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Hazumu was a shy boy who enjoyed gardening, collecting herbs, and long walks in the mountains. One day he finally worked up the courage to confess his love to Yasuna, but she rejected him.  Depressed, he wandered up Mt. Kashimayama, the place where they first met, to reconsider his feelings. After getting lost, he wished upon a shooting star and received a bizarre twist of fate.  Now he is a she, and she stumbles headfirst back into social life and relationships only to find that the entire landscape has changed!  (Source: Media Blasters)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>12</ID>
+        <Titulo>Kuro Gal ni Natta kara Shinyuu to shitemita.</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1267/111801.jpg</Imagen>
+        <Tipo>ONA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2021-04-05</FechaEstreno>
+        <Licencia>Ascendent Animation</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>53</ID>
+                <Nombre>Suiseisha</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1760/Suiseisha</Link>
+                <FechaCreacion>2015-01-14</FechaCreacion>
+                <Series>24</Series>
+            </Estudio>
+            <Estudio>
+                <ID>54</ID>
+                <Nombre>blackflag</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2197/blackflag</Link>
+                <FechaCreacion>2011-01-11</FechaCreacion>
+                <Series>3</Series>
+            </Estudio>
+            <Estudio>
+                <ID>55</ID>
+                <Nombre>Irawias</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2198/Irawias</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>1</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos/>
+        <Duracion>6.0</Duracion>
+        <Descripcion>Shion and Rui are the dream team when it comes to hitting on women. Tonight was going to be another night of hooking up with girls for Shion, but he ended up taking a strange drug. When he woke up... he'd turned into a girl?! Rui came looking for Shion, but didn't recognize him, and started hitting on him...  (Source: Suiseisha, translated)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>13</ID>
+        <Titulo>Ranma ½ OVA</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/12/63459.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1993-10-21</FechaEstreno>
+        <Licencia>VIZ Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>5</ID>
+                <Nombre>Kitty Films</Nombre>
+                <Link>https://myanimelist.net/anime/producer/99/Kitty_Films</Link>
+                <FechaCreacion>1982-03-24</FechaCreacion>
+                <Series>45</Series>
+            </Estudio>
+            <Estudio>
+                <ID>16</ID>
+                <Nombre>Pony Canyon</Nombre>
+                <Link>https://myanimelist.net/anime/producer/144/Pony_Canyon</Link>
+                <FechaCreacion>1966-10-01</FechaCreacion>
+                <Series>411</Series>
+            </Estudio>
+            <Estudio>
+                <ID>6</ID>
+                <Nombre>Fuji TV</Nombre>
+                <Link>https://myanimelist.net/anime/producer/169/Fuji_TV</Link>
+                <FechaCreacion>1959-03-01</FechaCreacion>
+                <Series>389</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+            <Estudio>
+                <ID>56</ID>
+                <Nombre>Kitty Film Mitaka Studio</Nombre>
+                <Link>https://myanimelist.net/anime/producer/2256/Kitty_Film_Mitaka_Studio</Link>
+                <FechaCreacion>null</FechaCreacion>
+                <Series>18</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>4</ID>
+                <Nombre>Martial Arts Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/17/Martial_Arts</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>597</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>30.0</Duracion>
+        <Descripcion>Ranma Saotome continues his search for a way to become a normal teenage boy again. He gets into many hilarious situations involving the many girls in his life. One of the biggest challenges is overcoming the proposals from others who have found a suitable bride for Ranma. But he has his own worries and must muster up the best of his wits and martial arts to keep his sanity. It's not easy being desired by so many women (and men) and not breaking hearts of a few along the way. He just might be able to find it in his heart to confess to Akane or simply find another excuse that he can't marry such a tomboy girl.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>14</ID>
+        <Titulo>Wagaya no Oinari-sama.</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/10/21249.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2008-04-07</FechaEstreno>
+        <Licencia>NIS America, Inc.</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>57</ID>
+                <Nombre>Kadokawa Shoten</Nombre>
+                <Link>https://myanimelist.net/anime/producer/113/Kadokawa_Shoten</Link>
+                <FechaCreacion>1954-04-02</FechaCreacion>
+                <Series>214</Series>
+            </Estudio>
+            <Estudio>
+                <ID>58</ID>
+                <Nombre>Kadokawa Pictures Japan</Nombre>
+                <Link>https://myanimelist.net/anime/producer/352/Kadokawa_Pictures_Japan</Link>
+                <FechaCreacion>1942-01-01</FechaCreacion>
+                <Series>44</Series>
+            </Estudio>
+            <Estudio>
+                <ID>40</ID>
+                <Nombre>KlockWorx</Nombre>
+                <Link>https://myanimelist.net/anime/producer/460/KlockWorx</Link>
+                <FechaCreacion>1997-01-24</FechaCreacion>
+                <Series>309</Series>
+            </Estudio>
+            <Estudio>
+                <ID>59</ID>
+                <Nombre>NTT Docomo</Nombre>
+                <Link>https://myanimelist.net/anime/producer/689/NTT_Docomo</Link>
+                <FechaCreacion>1992-07-01</FechaCreacion>
+                <Series>19</Series>
+            </Estudio>
+            <Estudio>
+                <ID>60</ID>
+                <Nombre>Zexcs</Nombre>
+                <Link>https://myanimelist.net/anime/producer/218/Zexcs</Link>
+                <FechaCreacion>1998-01-23</FechaCreacion>
+                <Series>77</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>15</ID>
+                <Nombre>Mythology Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/6/Mythology</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>636</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>The Mizuchi bloodline has long been hunted by Yokai, or monsters. Toru and Noboru Takagami are descendents of this bloodline, and under their grandmother's discretion, are given a secret weapon to combat these monsters. It is Tenko Kugen, a fox deity who can take the shape of a man or woman at will. The mischievous deity is accompanied by a shrine maiden, Ko, who will both live with the Takagami brothers at their house. Life just got complicated.  (Source: NIS America)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>15</ID>
+        <Titulo>Tenshi na Konamaiki</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1644/131230.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2002-04-07</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>9</ID>
+                <Nombre>TV Tokyo</Nombre>
+                <Link>https://myanimelist.net/anime/producer/16/TV_Tokyo</Link>
+                <FechaCreacion>1964-04-12</FechaCreacion>
+                <Series>589</Series>
+            </Estudio>
+            <Estudio>
+                <ID>61</ID>
+                <Nombre>TMS Entertainment</Nombre>
+                <Link>https://myanimelist.net/anime/producer/73/TMS_Entertainment</Link>
+                <FechaCreacion>1946-10-01</FechaCreacion>
+                <Series>396</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Megumi-chan is a girl with a secret past. She used to be a boy until she met a person she thought was a magic user. This person gave him/her a magical book from which a genie appears to grant one wish when blood is applied to it. Megumi made the wish to be a man in a man's body but the genie has a twist: he grants wishes backwards so he turns Megumi-kun aged 9 to Megumi-chan. Years pass and Megumi enters High School where she immediately beats up the school bully who of course falls in love with her. She is looking for that book again to be able to reverse the spell placed upon her.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>16</ID>
+        <Titulo>Ranma ½: Chuugoku Nekonron Daikessen! Okite Yaburi no Gekitou-hen!!</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/13/76023.jpg</Imagen>
+        <Tipo>Movie</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1991-11-02</FechaEstreno>
+        <Licencia>VIZ Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>6</ID>
+                <Nombre>Fuji TV</Nombre>
+                <Link>https://myanimelist.net/anime/producer/169/Fuji_TV</Link>
+                <FechaCreacion>1959-03-01</FechaCreacion>
+                <Series>389</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>1.0</Duracion>
+        <Descripcion>All is well at the Tendo residence when from out of nowhere, a Chinese girl named Lychee appears, seeking revenge on Happosai for a broken promise made since her birth. Things get worse when Kirin and the Seven Lucky Gods appear and abduct Akane to take as his wife. Ranma and the gang must travel to Nekonron, China, and save Akane from getting married to Kirin.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>17</ID>
+        <Titulo>Ranma ½: Kessen Tougenkyou! Hanayome wo Torimodose!</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1855/95323.jpg</Imagen>
+        <Tipo>Movie</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1992-08-01</FechaEstreno>
+        <Licencia>VIZ Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>16</ID>
+                <Nombre>Pony Canyon</Nombre>
+                <Link>https://myanimelist.net/anime/producer/144/Pony_Canyon</Link>
+                <FechaCreacion>1966-10-01</FechaCreacion>
+                <Series>411</Series>
+            </Estudio>
+            <Estudio>
+                <ID>6</ID>
+                <Nombre>Fuji TV</Nombre>
+                <Link>https://myanimelist.net/anime/producer/169/Fuji_TV</Link>
+                <FechaCreacion>1959-03-01</FechaCreacion>
+                <Series>389</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>1.0</Duracion>
+        <Descripcion>Ranma and the gang are invited to a boating trip with Kuno. Unfortunately, a storm destroys the yacht and everyone is stranded on a remote island. The whole situation goes even more awry when one by one, the girls disappear without a trace. Ranma then finds out that the girls are abducted by Toma, ruler of the island, as part of his personal harem.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>18</ID>
+        <Titulo>Ranma ½: Yomigaeru Kioku</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/11/63453.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1994-12-16</FechaEstreno>
+        <Licencia>VIZ Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>16</ID>
+                <Nombre>Pony Canyon</Nombre>
+                <Link>https://myanimelist.net/anime/producer/144/Pony_Canyon</Link>
+                <FechaCreacion>1966-10-01</FechaCreacion>
+                <Series>411</Series>
+            </Estudio>
+            <Estudio>
+                <ID>6</ID>
+                <Nombre>Fuji TV</Nombre>
+                <Link>https://myanimelist.net/anime/producer/169/Fuji_TV</Link>
+                <FechaCreacion>1959-03-01</FechaCreacion>
+                <Series>389</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>30.0</Duracion>
+        <Descripcion>"Reawakening Memories" deals with Akane suddenly remembering a trip to Ryugenzawa when she was a small child. While there she was saved from a giant platypus by Shinnosuke. Akane travels back to Ryogenzawa and once again meets Shinnosuke, who falls in love with her. Akane blames herself for Shinnosuke`s life-threatening injuries, and decides to stay and help out. This irritates Ranma, who thinks that Akane has fallen in love with Shinnosuke, and will do what it takes to get her back.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>19</ID>
+        <Titulo>Kashimashi: Girl Meets Girl - Shoujo wa Shoujo ni Koi wo Shita</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/11/18416.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2006-10-27</FechaEstreno>
+        <Licencia>Media Blasters</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>51</ID>
+                <Nombre>Bandai Visual</Nombre>
+                <Link>https://myanimelist.net/anime/producer/23/Bandai_Visual</Link>
+                <FechaCreacion>1983-08-23</FechaCreacion>
+                <Series>435</Series>
+            </Estudio>
+            <Estudio>
+                <ID>50</ID>
+                <Nombre>Lantis</Nombre>
+                <Link>https://myanimelist.net/anime/producer/104/Lantis</Link>
+                <FechaCreacion>1999-11-26</FechaCreacion>
+                <Series>492</Series>
+            </Estudio>
+            <Estudio>
+                <ID>52</ID>
+                <Nombre>Studio Hibari</Nombre>
+                <Link>https://myanimelist.net/anime/producer/101/Studio_Hibari</Link>
+                <FechaCreacion>1979-07-01</FechaCreacion>
+                <Series>73</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>16</ID>
+                <Nombre>Love Polygon Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/64/Love_Polygon</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>90</Series>
+            </Genero>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+        </Generos>
+        <Duracion>26.0</Duracion>
+        <Descripcion>This is an OVA released on October 27th, 2006. It is also classified as the 13th episode (thus a sequel) to Kashimashi ~Girl Meets Girl~.  Hazumu confessed his love to Yasuna, but she turned him down him. To ease his heartbreak, he went to Mt. Kashimayama where he had met her first. However he lost his way in the mountain, and it was night time. He saw a big shooting star, and when he began to wish, he found out that something was wrong. It was not a shooting star, but it was a falling space ship. He was involved in the crash, but he managed to survive by the help of an alien. However, he became a girl due to the accident during the reconstruction of his body.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>20</ID>
+        <Titulo>Ranma ½: Akumu! Shunmin Kou</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/10/63469.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2008-07-30</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>62</ID>
+                <Nombre>Sunrise</Nombre>
+                <Link>https://myanimelist.net/anime/producer/14/Sunrise</Link>
+                <FechaCreacion>1976-11-01</FechaCreacion>
+                <Series>574</Series>
+            </Estudio>
+            <Estudio>
+                <ID>63</ID>
+                <Nombre>Atelier Musa</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1175/Atelier_Musa</Link>
+                <FechaCreacion>1986-06-01</FechaCreacion>
+                <Series>38</Series>
+            </Estudio>
+            <Estudio>
+                <ID>8</ID>
+                <Nombre>Studio Deen</Nombre>
+                <Link>https://myanimelist.net/anime/producer/37/Studio_Deen</Link>
+                <FechaCreacion>1975-03-14</FechaCreacion>
+                <Series>319</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>4</ID>
+                <Nombre>Martial Arts Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/17/Martial_Arts</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>597</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>32.0</Duracion>
+        <Descripcion>Twelve years after the final OVA was shown, and the end of the manga, a new piece of Ranma ½ animation was made for the "It's a Rumic World" exhibition of Rumiko Takahashi's artwork. The new 30 minute special is based on the "Nightmare! Incense of Spring Sleep" manga story from volume 34, and was shown on odd numbered days at the "It's A Rumic World" exhibition in Tokyo from July 30th to August 11th.  (Source: Wikipedia)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>21</ID>
+        <Titulo>Eoneu Nal Jameseo Kkaeeoboni Bagelyeoga Doeeo Isseotda</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1002/110132.jpg</Imagen>
+        <Tipo>ONA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2019-11-25</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>64</ID>
+                <Nombre>Studio Animal</Nombre>
+                <Link>https://myanimelist.net/anime/producer/999/Studio_Animal</Link>
+                <FechaCreacion>2000-01-01</FechaCreacion>
+                <Series>9</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Web manga</Src>
+        <Generos/>
+        <Duracion>12.0</Duracion>
+        <Descripcion>Bong Gi used to have dreams of making something of his life. But now all that seems like a distant memory. He has become fat, lazy, unemployed, and altogether unlovable. In the real world, people are grossed out by him. He has never had a girlfriend and he spends his late nights fantasizing about women whose pictures he leers at on the internet. His own life appalls him, but he has one escape – his online life. Gaming has become his everything, and he excels at it.  After another long, lonely night of gaming, he wakes up – and is shocked to find that he has transformed into a woman. Or to be more precise, a woman who looks a lot like those he used to lust after online! Confused, he does not know where to turn – so looks for answers on the net. He encounters a young woman in a chat forum named Sae Mi, who offers him advice. He soon falls for her charms – which makes things complicated to say the least. And things get even more bizarre when he attempts to take revenge on Sang Woo, a school bully who turns out to be Sae Mi’s older brother!  (Source: Viki)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>22</ID>
+        <Titulo>Cinderella Boy</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/7/89194.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2003-06-21</FechaEstreno>
+        <Licencia>Discotek Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>65</ID>
+                <Nombre>Magic Bus</Nombre>
+                <Link>https://myanimelist.net/anime/producer/207/Magic_Bus</Link>
+                <FechaCreacion>1972-04-01</FechaCreacion>
+                <Series>97</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>11</ID>
+                <Nombre>Seinen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/42/Seinen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>995</Series>
+            </Genero>
+        </Generos>
+        <Duracion>25.0</Duracion>
+        <Descripcion>Ranma and his partner Rera run a detective agency in Giraffe City. An arranged accident leaves Rera and Ranma in an unfortunate state where the two detectives swap bodies at the stroke of midnight. With Ranma dissapearing and the beautiful Rera appearing.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>23</ID>
+        <Titulo>Maze☆Bakunetsu Jikuu (TV)</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/4/20383.jpg</Imagen>
+        <Tipo>TV</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1997-04-03</FechaEstreno>
+        <Licencia>Central Park Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>57</ID>
+                <Nombre>Kadokawa Shoten</Nombre>
+                <Link>https://myanimelist.net/anime/producer/113/Kadokawa_Shoten</Link>
+                <FechaCreacion>1954-04-02</FechaCreacion>
+                <Series>214</Series>
+            </Estudio>
+            <Estudio>
+                <ID>22</ID>
+                <Nombre>J.C.Staff</Nombre>
+                <Link>https://myanimelist.net/anime/producer/7/JCStaff</Link>
+                <FechaCreacion>1986-01-18</FechaCreacion>
+                <Series>421</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>17</ID>
+                <Nombre>Mecha Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/18/Mecha</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1272</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>Maze wakes up in her house, everything is a wreck and she has amnesia. Before she can gather what has happened the girl Mill storms into her house thanking her for having saved her life. She tells Maze that her house suddenly fell down from the sky and crushed Mills pursuers under it. However before long they are both on the run from further pursuers who want their hands on princess Mill. They are only saved when Maze discovers that she has phantom light magical powers and can summon Mills family heirloom mecha. However her performance with the mecha is weak; that is until the sun goes down and she is turned in to a lecherous man. Soon other travellers join them as Maze tries to protect Mill and figure out what she is doing in this fantasy world.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>24</ID>
+        <Titulo>Happiness!: Watarase Jun no Kareinaru Ichinichi</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1744/116808.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2007-01-25</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>66</ID>
+                <Nombre>Artland</Nombre>
+                <Link>https://myanimelist.net/anime/producer/8/Artland</Link>
+                <FechaCreacion>2010-12-01</FechaCreacion>
+                <Series>53</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Visual novel</Src>
+        <Generos/>
+        <Duracion>23.0</Duracion>
+        <Descripcion>With the help of the combination of many different magic, Jun gets turned into an actual girl.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>25</ID>
+        <Titulo>Maze☆Bakunetsu Jikuu</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/4/6944.jpg</Imagen>
+        <Tipo>OVA</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1996-07-24</FechaEstreno>
+        <Licencia>Central Park Media</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>57</ID>
+                <Nombre>Kadokawa Shoten</Nombre>
+                <Link>https://myanimelist.net/anime/producer/113/Kadokawa_Shoten</Link>
+                <FechaCreacion>1954-04-02</FechaCreacion>
+                <Series>214</Series>
+            </Estudio>
+            <Estudio>
+                <ID>22</ID>
+                <Nombre>J.C.Staff</Nombre>
+                <Link>https://myanimelist.net/anime/producer/7/JCStaff</Link>
+                <FechaCreacion>1986-01-18</FechaCreacion>
+                <Series>421</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>17</ID>
+                <Nombre>Mecha Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/18/Mecha</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1272</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>30.0</Duracion>
+        <Descripcion>Maze has gained incredible powers traveling through time and space, but she has also acquired one rather large problem: every night she turns into a really horny man. Unfortunately, Maze must rescue an equally lascivious princess from a mysterious warrior cult. Still, the male version of Maze would rather be chasing tail than rescuing willing princesses.  (Source: ANN)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>26</ID>
+        <Titulo>Ore, Twintail ni Narimasu. Recap</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1845/99646.jpg</Imagen>
+        <Tipo>Special</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2015-04-05</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>19</ID>
+                <Nombre>Production IMS</Nombre>
+                <Link>https://myanimelist.net/anime/producer/1053/Production_IMS</Link>
+                <FechaCreacion>2013-02-14</FechaCreacion>
+                <Series>25</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Light novel</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>3</ID>
+                <Nombre>School Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/23/School</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>2005</Series>
+            </Genero>
+            <Genero>
+                <ID>8</ID>
+                <Nombre>Super Power Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/31/Super_Power</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>699</Series>
+            </Genero>
+        </Generos>
+        <Duracion>24.0</Duracion>
+        <Descripcion>A recap episode of Ore, Twintail ni Narimasu. that aired exclusively on BS-TBS. It starts with a chibi Souji and Aika speaking to the viewer before delving into the body of the recap where they comment about the events of the TV anime. The voice actors of Souji and Aika both represent themselves and the characters they voice flipping between sounding like their characters and speaking casually as real people. The recaps ends with chibi Souji and Aika thanking the viewer and then talking about how fun the Ore, Twintail ni Narimasu. live-event was (which clips are shown of) and asking viewers to visit the official site to find news about future events.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>27</ID>
+        <Titulo>Ayakashi Triangle Recap</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1962/134596.jpg</Imagen>
+        <Tipo>Special</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>2023-03-21</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>49</ID>
+                <Nombre>Connect</Nombre>
+                <Link>https://myanimelist.net/anime/producer/957/Connect</Link>
+                <FechaCreacion>2012-04-01</FechaCreacion>
+                <Series>25</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>15</ID>
+                <Nombre>Mythology Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/6/Mythology</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>636</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>23.0</Duracion>
+        <Descripcion>Recap of the first 6 episodes of Ayakashi Triangle.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>28</ID>
+        <Titulo>Maze☆Bakunetsu Jikuu: Hot Springs</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/7/6943.jpg</Imagen>
+        <Tipo>Special</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1998-01-01</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios/>
+        <Src>Manga</Src>
+        <Generos/>
+        <Duracion>22.0</Duracion>
+        <Descripcion>This is the missing Hot Springs episode included in the unrated boxset of Maze: Mega-Burst Space.</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>29</ID>
+        <Titulo>Maze☆Bakunetsu Jikuu: Tenpen Kyoui no Giant</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/6/24234.jpg</Imagen>
+        <Tipo>Movie</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1998-04-25</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios>
+            <Estudio>
+                <ID>22</ID>
+                <Nombre>J.C.Staff</Nombre>
+                <Link>https://myanimelist.net/anime/producer/7/JCStaff</Link>
+                <FechaCreacion>1986-01-18</FechaCreacion>
+                <Series>421</Series>
+            </Estudio>
+        </Estudios>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>2</ID>
+                <Nombre>Magical Sex Shift Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/65/Magical_Sex_Shift</Link>
+                <Descripcion>One or more main characters in these stories identify as their biological sex, but their body is suddenly changed to the opposite sex through magical means. This Magical Sex Switch may be temporary, irreversible, or allow the character to change back and forth between the two. Since the character's original identity is not lost, coming to terms with the magical sex switch or finding a method to change back should play a central role in the plot.  Trading bodies between opposite sexes is Body Swap themed. Dying or being killed, and then being reborn as the opposite sex, is Reincarnation.</Descripcion>
+                <Series>30</Series>
+            </Genero>
+            <Genero>
+                <ID>17</ID>
+                <Nombre>Mecha Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/18/Mecha</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1272</Series>
+            </Genero>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>42.0</Duracion>
+        <Descripcion>Long time ago, there was peace until the giants decide to wake up after years and years of slumber.The three priestesses sisters who were guarding their shrine had to retreat to seek help and who better to ask Maze for help.  (Source: Maze Of The Haze)</Descripcion>
+    </Serie>
+    <Serie>
+        <ID>30</ID>
+        <Titulo>Shounen Sunday CM: Tenshi na Konamaiki</Titulo>
+        <Imagen>https://cdn.myanimelist.net/images/anime/1023/126634.jpg</Imagen>
+        <Tipo>Special</Tipo>
+        <Estado>Finished Airing</Estado>
+        <FechaEstreno>1999-09-13</FechaEstreno>
+        <Licencia>None found</Licencia>
+        <Estudios/>
+        <Src>Manga</Src>
+        <Generos>
+            <Genero>
+                <ID>5</ID>
+                <Nombre>Shounen Anime</Nombre>
+                <Link>https://myanimelist.net/anime/genre/27/Shounen</Link>
+                <Descripcion>Descripcion generica</Descripcion>
+                <Series>1914</Series>
+            </Genero>
+        </Generos>
+        <Duracion>30.0</Duracion>
+        <Descripcion>Tenshi na Konamaiki television commercial for the Shounen Sunday magazine.</Descripcion>
+    </Serie>
+</Series>

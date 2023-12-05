@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Controlador"},{"p":"<Unnamed>","l":"Estudio"},{"p":"<Unnamed>","l":"Genero"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Serie"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Controlador"},{"p":"<Unnamed>","l":"Estudio"},{"p":"<Unnamed>","l":"Genero"},{"p":"<Unnamed>","l":"JaxB_XML"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"Serie"}];updateSearchResults();
