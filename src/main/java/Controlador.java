@@ -138,7 +138,7 @@ public class Controlador {
         options.setBinary("/home/usuario/Descargas/firefox-118.0.2/firefox/firefox");
 
         WebDriver driver = new FirefoxDriver(options);
-        String link = "https://myanimelist.net/anime/genre/62/Isekai";
+        String link = "https://myanimelist.net/anime/genre/32/Vampire";
         String[] text = link.split("/");
         directorio = text[text.length-1];
         crearDirectorio();
@@ -208,7 +208,7 @@ public class Controlador {
     public void guardarSeries(WebDriver driver){
         for (String a:linksSeries) {
             driver.get(a);
-            sleep(7000);
+            sleep(10000);
             WebElement serie = driver.findElement(By.className("h1_bold_none"));
             String descripcion = driver.findElement(By.className("rightside")).findElement(By.tagName("p")).getText().replaceAll("\n"," ");
             String titulo = serie.findElement(By.tagName("strong")).getText();
@@ -259,7 +259,7 @@ public class Controlador {
                     licencia = e.getText().split(": ")[1].replaceAll(", add some", "");
                 }else if(e.getText().contains("Source: ")){
                     src = e.getText().split(": ")[1];
-                }else if(e.getText().contains("Genre: ") || e.getText().contains("Themes: ") || e.getText().contains("Demographic: ")){
+                }else if(e.getText().contains("Genres: ") || e.getText().contains("Genre: ") || e.getText().contains("Themes: ") || e.getText().contains("Theme: ") || e.getText().contains("Demographic: ") || e.getText().contains("Demographics: ")){
                     if(!e.getText().contains("add some")){
                         generoL.addAll(guardarLinksGeneros(e));
                     }
@@ -334,7 +334,7 @@ public class Controlador {
         for (String a:links) {
             if(Collections.frequency(linksEstudios, a)<=1){
                 driver.get(a);
-                sleep(7000);
+                sleep(9000);
                 String titulo = driver.findElement(By.className("h1-title")).getText();
                 LocalDate fechaCreacion=null;
                 WebElement cuadroHorizontal = driver.findElement(By.className("navi-seasonal"));
@@ -392,7 +392,7 @@ public class Controlador {
         for (String a:links) {
             if(Collections.frequency(linksGeneros, a)<=1){
                 driver.get(a);
-                sleep(7000);
+                sleep(9000);
                 String titulo = driver.findElement(By.className("h1")).getText();
                 List<WebElement> num = driver.findElements(By.className("fw-n"));
                 int series = 0;
