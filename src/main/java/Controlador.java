@@ -138,7 +138,7 @@ public class Controlador {
         options.setBinary("/home/usuario/Descargas/firefox-118.0.2/firefox/firefox");
 
         WebDriver driver = new FirefoxDriver(options);
-        String link = "https://myanimelist.net/anime/genre/62/Isekai";
+        String link = "https://myanimelist.net/anime/genre/65/Magical_Sex_Shift";
         String[] text = link.split("/");
         directorio = text[text.length-1];
         crearDirectorio();
